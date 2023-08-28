@@ -1,0 +1,13 @@
+**************초기 설정법******************
+
+1. clone받은 프로젝트 추가
+2. 프로젝트 우클릭 -> property -> facet 에서 dynamic web module , java 11, javascript 체크
+3. buildpath 설정
+4. 	
+	org.eclipse.wst.common.component 들어가서
+	복붙
+	<wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+
+5. 되는지 확인
+	
