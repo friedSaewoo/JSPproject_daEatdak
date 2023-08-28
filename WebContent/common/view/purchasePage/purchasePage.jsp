@@ -77,7 +77,7 @@
 							<div class="order-goods-section">
 								<h4>결제 상품 정보</h4>
 								<div class="order-goods-info">
-									<input type="image" src="/product/img/beverage01.png"
+									<input type="image" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png"
 										name="order-goods-img" />
 									<div class="order-goods-name-price">
 										<h5>상품명</h5>
@@ -97,7 +97,7 @@
 									</div>
 								</div>
 								<div class="order-goods-info">
-									<input type="image" src="/product/img/beverage01.png"
+									<input type="image" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png"
 										name="order-goods-img" />
 									<div class="order-goods-name-price">
 										<h5>상품명</h5>

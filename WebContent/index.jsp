@@ -4,6 +4,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/common/css/common.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/common/css/index.css" rel="stylesheet" type="text/css" />
@@ -11,7 +12,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/common/js/index.js" defer></script>
-
 
 
     <title>다잇닭</title>
@@ -183,7 +183,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_chickenpage/product_main_chicken.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/ChickenGoodsMain.jsp">
                                         <h6>닭고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -292,7 +292,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_pigpage/product_main_pig.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/PigGoodsMain.jsp">
                                         <h6>돼지고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -401,7 +401,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_cowpage/product_main_cow.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/CowGoodsMain.jsp">
                                         <h6>소고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -510,7 +510,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_beveragepage/product_main_beverage.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/CFGoodsMain.jsp">
                                         <h6>간편식 전체보기</h6>
                                     </a>
                                 </div>
@@ -652,7 +652,7 @@
                                 <div class="material-detail">
                                     <p>다잇닭</p>
                                     <p>훈제 닭가슴살 100g</p>
-                                    <p><a href="">구매하기</a></p>
+                                    <p><a href="${pageContext.request.contextPath}/goods/view/GoodsBuyPage.jsp">구매하기</a></p>
                                 </div>
                             </dd>                            
                         </dl>
