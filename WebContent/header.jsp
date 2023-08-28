@@ -31,7 +31,7 @@
             <div class="user-container">
                 <ul>
                     <li>
-                        <a href="${pageContext.request.contextPath}/member/view">
+                        <a href="${pageContext.request.contextPath}/member/view/login.jsp">
                             <span class="material-symbols-outlined">
                                 lock
                             </span>
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/member/view">
+                        <a href="${pageContext.request.contextPath}/member/view/signupSelect.jsp">
                             <span class="material-symbols-outlined">
                                 person_add
                             </span>
