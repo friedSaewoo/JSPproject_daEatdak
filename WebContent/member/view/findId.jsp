@@ -39,13 +39,13 @@
 					<div class="idfind-container">
                 <div class="idfind-area">
                     <div class="idfind-greeting">
-                        <strong class="txt">아이디 찾기</strong>
+                        <strong class="txt">이메일 찾기</strong>
                     </div>
                     <form id="findid_form" name="findid_form" action="" method="post" >
                         <div class="input-group">
                         <div class="input-text">
-                            <input type="text" placeholder="이름 입력" maxlength="100" >
                             <input type="text" placeholder="이메일 입력" maxlength="100" >
+                            <input type="text" placeholder="휴대폰 번호 입력" maxlength="100" >
                             </div>                           
                         </div>
                         <div class="button-submit">

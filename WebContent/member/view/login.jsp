@@ -44,7 +44,7 @@
                     <form id="login_form" name="login_form" action="" method="post" >
                         <div class="input-group">
                         <div class="input-text">
-                            <input type="text" placeholder="아이디" maxlength="100" >
+                            <input type="text" oninput="handleOnInput(this)" placeholder="이메일" maxlength="100" >
                             <input type="password" placeholder="비밀번호" maxlength="100" >
                             </div>                           
                         </div>
@@ -53,10 +53,10 @@
                         </div>
                         <div class="button-found">
                             <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/findPw.jsp' ">비밀번호 찾기</button>
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/findId.jsp'  ">아이디 찾기</button>
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/findId.jsp' ">이메일 찾기</button>
                         </div>
                         <div class="button-kakaologin">
-                            <button type="button" onclick="location.href='/login/html/kakaologin.html' "><img src="${pageContext.request.contextPath}/resources/member/img/kakao_login.png" alt=""></button>
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/kakaoLogin.jsp' "><img src="${pageContext.request.contextPath}/resources/member/img/kakao_login.png" alt=""></button>
                         </div>
                         <div class="button-signup">
                             <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/signupSelect.jsp' ">회원가입</button>  

@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/member/css/signUp.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/common/img/logoPic.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" ></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
+<script src="${pageContext.request.contextPath}/resources/member/js/signUp.js " defer></script>
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
@@ -47,12 +48,12 @@
                             
                         <div class="input-text">    
                             <input type="text" id="name" placeholder="이름 입력" maxlength="100" >                       
-                            <input type="text" id="id" placeholder="아이디 입력" maxlength="100" style="width: 330px; margin-bottom: -2px;">
+                            <input type="text" oninput="handleOnInput(this)" id="id" placeholder="이메일 입력   (ex : admin@naver.com)" maxlength="100" style="width: 330px; margin-bottom: -2px;">
                             <input type="button" style="width: 80px; margin-bottom: -2px;" id="id_request" value="중복확인"></button>&nbsp;<span id="here"></span>
                             <input type="password" name ="userPW" id="pw" onchange="check_pw()" placeholder="비밀번호 입력" maxlength="100" >
                             <input type="password" name="userPW2" id="pw2" onchange="check_pw()" placeholder="비밀번호 확인" maxlength="100" style="margin-bottom: -2px;">&nbsp;<span id="check"></span>
                             <div class="email" id = "email">
-                                <input name="email1" type="text" placeholder="이메일 입력"> @ <input name="email2" type="text">
+                               <!-- <input name="email1" type="text" placeholder="이메일 입력"> @ <input name="email2" type="text">
                                 <select name="select_email" onChange="selectEmail(this)">
                                         <option value="">선택하세요</option>
                                         <option value="naver.com">naver.com</option>
@@ -63,7 +64,7 @@
                                         <option value="1">직접입력</option>
                                     </select>
                                     <input name="email2_input" type="text" style="display: none;">
-                                </span>
+                                </span>-->
                             </div>
                             <input type="text" id="phonenumber" placeholder="휴대폰 번호 입력" maxlength="100" >
                             <input type="text" id="address" placeholder="주소 입력" maxlength="100" style="width: 330px; margin-bottom: 20px;">
@@ -71,7 +72,7 @@
                             <input type="text" id="address_detail" placeholder="상세주소 입력" maxlength="100" >                            
                         </div>    
                         <div class="button-signup">
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/login.jsp' ">가입완료</button>             
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/login.jsp' " >가입완료</button>             
                         </div>    
                     </form>                   
                 </div>
