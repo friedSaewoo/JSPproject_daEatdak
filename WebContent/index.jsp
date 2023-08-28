@@ -183,7 +183,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_chickenpage/product_main_chicken.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/ChickenGoodsMain.jsp">
                                         <h6>닭고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -292,7 +292,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_pigpage/product_main_pig.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/PigGoodsMain.jsp">
                                         <h6>돼지고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -401,7 +401,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_cowpage/product_main_cow.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/CowGoodsMain.jsp">
                                         <h6>소고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -510,7 +510,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="/product/html/product_main_beveragepage/product_main_beverage.html">
+                                    <a href="${pageContext.request.contextPath}/goods/view/CFGoodsMain.jsp">
                                         <h6>간편식 전체보기</h6>
                                     </a>
                                 </div>

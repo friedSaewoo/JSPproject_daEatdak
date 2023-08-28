@@ -21,7 +21,7 @@
 
             <!-- 로고-->
             <div class="header-logo-container">
-                <a href='/daEatdak' method="get">
+                <a href='${pageContext.request.contextPath}/index.jsp' method="get">
                     <h4>다잇닭</h4>
                 
                  <p>daEatdak</p> </a>
@@ -31,7 +31,7 @@
             <div class="user-container">
                 <ul>
                     <li>
-                        <a href="/login/html/login.html">
+                        <a href="${pageContext.request.contextPath}/member/view">
                             <span class="material-symbols-outlined">
                                 lock
                             </span>
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/login/html/signupselet.html">
+                        <a href="${pageContext.request.contextPath}/member/view">
                             <span class="material-symbols-outlined">
                                 person_add
                             </span>
@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/QnAboard/html/board_list.html">
+                        <a href="${pageContext.request.contextPath}/board/view/boardList.jsp">
                             <span class="material-symbols-outlined">
                                 support_agent
                             </span>
@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/product/html/product_cart_choice.html">
+                        <a href="${pageContext.request.contextPath}/goods/view/GoodsContainCart.jsp">
                             <span class="material-symbols-outlined">
                                 shopping_cart
                             </span>
@@ -74,13 +74,13 @@
             <div class="nav-ul-container">
                 <nav>
                     <ul>
-                        <li><a href="/product/html/product_main_chickenpage/product_main_chicken.html"><h4>닭고기</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/view/ChickenGoodsMain.jsp"><h4>닭고기</h4></a></li>
                         <li><h4>|</h4></li>
-                        <li><a href="/product/html/product_main_pigpage/product_main_pig.html"><h4>돼지고기</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/view/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
                         <li><h4>|</h4></li>
-                        <li><a href="/product/html/product_main_cowpage/product_main_cow.html"><h4>소고기</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/view/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
                         <li><h4>|</h4></li>
-                        <li><a href="/product/html/product_main_beveragepage/product_main_beverage.html"><h4>간편식 &dot; 음료</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/view/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
                     </ul>
                 </nav>
             </div>
@@ -108,20 +108,20 @@
          <div class="nav-fix-menu-container" style="display: none;" >
             <div class="nav-fix-menu-content">
                 <div class="nav-fix-title">
-                    <a href='/daEatdak' method="get">
+                    <a href='${pageContext.request.contextPath}/index.jsp' method="get">
                     <h4>다잇닭</h4>
                  </a>
                 </div>
                 <div class="nav-fix-menu">
                     <nav>
                         <ul>
-                            <li><a href="/product/html/product_main_chickenpage/product_main_chicken.html"><h4>닭고기</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/view/ChickenGoodsMain.jsp"><h4>닭고기</h4></a></li>
                             <li><h4>|</h4></li>
-                            <li><a href="/product/html/product_main_pigpage/product_main_pig.html"><h4>돼지고기</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/view/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
                             <li><h4>|</h4></li>
-                            <li><a href="/product/html/product_main_cowpage/product_main_cow.html"><h4>소고기</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/view/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
                             <li><h4>|</h4></li>
-                            <li><a href="/product/html/product_main_beveragepage/product_main_beverage.html"><h4>간편식 &dot; 음료</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/view/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
                         </ul>
                     </nav>
                 </div>

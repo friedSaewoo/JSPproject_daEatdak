@@ -16,13 +16,13 @@
         <div class="footer-term-container">
             <div class="footer-term-section">
                 <ul>
-                    <li><a href="./common/term_1.jsp">개인정보처리방침</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_1.jsp">개인정보처리방침</a></li>
                     <li>|</li>
-                    <li><a href="./common/term_2.jsp">개인정보취급방침</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_2.jsp">개인정보취급방침</a></li>
                     <li>|</li>
-                    <li><a href="./common/term_3.jsp">개인정보수집 및 이용</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_3.jsp">개인정보수집 및 이용</a></li>
                     <li>|</li>
-                    <li><a href="./common/term_4.jsp">이용약관</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_4.jsp">이용약관</a></li>
                 </ul>
             </div>
         </div>
