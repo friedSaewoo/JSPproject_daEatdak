@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/product/html/product_cart_choice.html">
+                        <a href="">
                             <span class="material-symbols-outlined">
                                 shopping_cart
                             </span>

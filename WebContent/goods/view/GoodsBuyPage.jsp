@@ -28,7 +28,7 @@
                     <div class="product-info-top">
                         <div class="product-info-top-left">
                             <figure class="product-img">
-                                <img src="/product/img/chicken01.png">
+                                <img src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png">
                             </figure>
                         </div>
                         <div class="product-info-top-right">
@@ -124,8 +124,8 @@
                         <p>상품정보</p>
                     
                         <div class="product_deteil_info">
-                            <img src="/product/img/product_info.jpg">
-                            <img src="/product/img/product_info.2jpg.jpg">
+                            <img src="${pageContext.request.contextPath}/resources/goods/img/product_info.jpg">
+                            <img src="${pageContext.request.contextPath}/resources/goods/img/product_info2.jpg">
                            
                         </div>
                     </div>
