@@ -34,7 +34,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/productBuypage_beverage.html">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -50,7 +50,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -66,7 +66,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -82,7 +82,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -98,7 +98,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -114,7 +114,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -130,7 +130,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -146,7 +146,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -162,7 +162,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage01.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -178,7 +178,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -194,7 +194,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -210,7 +210,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -226,7 +226,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -242,7 +242,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -258,7 +258,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -274,7 +274,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -290,7 +290,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -306,7 +306,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage03.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -322,7 +322,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -338,7 +338,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -354,7 +354,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -370,7 +370,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -386,7 +386,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -402,7 +402,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -418,7 +418,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -434,7 +434,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
@@ -450,7 +450,7 @@
                             <div class="list">
                                 <figure class="img">
                                     <a href="">
-                                        <img class="beverage" src="/product/img/beverage02.png">
+                                        <img class="beverage" src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                     </a>
                                 </figure>
                                 <div class="list-name-top">
