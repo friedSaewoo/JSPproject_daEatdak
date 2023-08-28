@@ -56,6 +56,7 @@
                     </li>
                     <li>
                         <a href="${pageContext.request.contextPath}/goods/view/GoodsContainCart.jsp">
+
                             <span class="material-symbols-outlined">
                                 shopping_cart
                             </span>

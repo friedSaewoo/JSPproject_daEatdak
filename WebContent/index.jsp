@@ -652,7 +652,7 @@
                                 <div class="material-detail">
                                     <p>다잇닭</p>
                                     <p>훈제 닭가슴살 100g</p>
-                                    <p><a href="">구매하기</a></p>
+                                    <p><a href="${pageContext.request.contextPath}/goods/view/GoodsBuyPage.jsp">구매하기</a></p>
                                 </div>
                             </dd>                            
                         </dl>

@@ -70,7 +70,7 @@
                         <p>FAX. 02-2135-2949</p>
                     </dd>
                     <dd>
-                        <a href="/QnAboard/html/board_list.html">문의하기</a>
+                        <a href="${pageContext.request.contextPath}/board/view/boardList.jsp">문의하기</a>
                     </dd>
                 </dl>
             </div>

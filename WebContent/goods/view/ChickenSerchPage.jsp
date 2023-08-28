@@ -28,7 +28,7 @@
                 <div class="page-top">
                 <%--<h2>태그에는 차후 메인페이지에서 상품검색 후 요청한 이름을 
                 받아서 페이지에 보일수 있게 한다 --%>
-                <%--데이터 베이스를 설계시 페이지를 다시 구현할필요가 있음 --%>S
+                <%--데이터 베이스를 설계시 페이지를 다시 구현할필요가 있음 --%>
                     <h2 class="page-name"><"${search}">를 검색해봤어요!</h2>
                 </div>
                 <div class="product-inter">
@@ -38,7 +38,7 @@
                             	<form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -56,7 +56,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -74,7 +74,7 @@
                                 <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -92,7 +92,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -110,7 +110,7 @@
                                 <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -128,7 +128,7 @@
                               <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -146,7 +146,7 @@
                                 <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -164,7 +164,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -182,7 +182,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -200,7 +200,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -218,7 +218,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -236,7 +236,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -254,7 +254,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -272,7 +272,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -290,7 +290,7 @@
                                 <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -308,7 +308,7 @@
                               <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -327,7 +327,7 @@
                              <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -345,7 +345,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken02.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -363,7 +363,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -381,7 +381,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -399,7 +399,7 @@
                               <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -417,7 +417,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -435,7 +435,7 @@
                               <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -453,7 +453,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -471,7 +471,7 @@
                               <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -489,7 +489,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>
@@ -507,7 +507,7 @@
                                <form action="" method="get">
                                 <figure class="img">
                                     <a href="/product/html/product_buy_page/prouctBuypage.html">
-                                        <img class="chicken" src="jsp_daEatdak/WebContent/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken03.png" alt="상품이미지">
                                     </a>
                                 </figure>
                                 </form>

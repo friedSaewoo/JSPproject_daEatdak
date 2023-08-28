@@ -53,7 +53,7 @@
                                         </div>
                                         <div class="img-area">
                                                 <figure>
-                                                    <img src="/product/img/beverage01.png">
+                                                    <img src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png">
                                                 </figure>
                                         </div>
                                         <div class="goods-text-area">
@@ -78,7 +78,7 @@
                                         </div>
                                         <div class="img-area">
                                             <figure>
-                                                <img src="/product/img/beverage02.png">
+                                                <img src="${pageContext.request.contextPath}/resources/goods/img/beverage02.png">
                                             </figure>
                                         </div>
                                         <div class="goods-text-area">
@@ -103,7 +103,7 @@
                                         </div>
                                         <div class="img-area">
                                             <figure>
-                                                <img src="/product/img/beverage03.png">
+                                                <img src="${pageContext.request.contextPath}/resources/goods/img/beverage03.png">
                                             </figure>
                                         </div>
                                         <div class="goods-text-area">
