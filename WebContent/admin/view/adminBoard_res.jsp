@@ -14,17 +14,8 @@
 <body>
     <main class="test">
         <div class="section-container">
-            <div class="aside">
-                <div class="main_logo">
-                    <a href="${pageContext.request.contextPath}/index.jsp">
-                        <img style="width: 140px;" src="${pageContext.request.contextPath}/resources/admin/img/mainLogo01.png">
-                    </a>
-                </div>
-                <a href="adminMain.jsp"><div class="admin_menu">메인화면</div></a>
-                <a href="adminMemberInfo.jsp"><div class="admin_menu">회원정보</div></a>
-                <a href="adminProductInfo.jsp"><div class="admin_menu">상품관리</div></a>
-                <a href="${pageContext.request.contextPath}/board/view/boardList.jsp"><div class="admin_menu">문의게시판</div></a>
-            </div>
+    	<%@ include file="aside.jsp" %>
+
             <div class="main-container">
                 문의글 답변 페이지
             </div>
