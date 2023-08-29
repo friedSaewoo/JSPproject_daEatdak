@@ -22,7 +22,7 @@ a {
 .aside {
     width: 211px;
     height: 90%;
-    border: 2px solid rgb(202, 46, 46);
+    border: 1px solid rgb(26, 26, 26);
 }
 
 .upIns {
@@ -36,7 +36,6 @@ a {
     text-align : center;
     justify-content: center;
     background-color: white;
-    border: 1px solid black;
     color: black;
 /*    border-radius: 5px;*/
     margin: 10px 10px auto;
@@ -338,6 +337,7 @@ button:hover {
     height: 250px;
     background-color: white;
     margin-left: 40px;
+    border: 1px solid lightgrey;
 }
 
 
@@ -376,8 +376,17 @@ button:hover {
     
 }
 
-
-
+.admin_main {
+	display: flex;
+	justify-content: flex-start;
+/*	justify-content: space-between;*/
+}
+.mainHeader {
+/*	display: flex;
+	justify-content: flex-start;*/
+	width: 70%
+	
+}
 
 
 

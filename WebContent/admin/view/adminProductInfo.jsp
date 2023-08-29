@@ -14,17 +14,7 @@
 <body>
     <main class="test">
         <div class="section-container">  <!-- 좌측 관리자 메뉴-->             
-            <div class="aside">
-                <div class="main_logo">
-                    <a href="${pageContext.request.contextPath}/index.jsp">
-                        <img style="width: 140px;" src="${pageContext.request.contextPath}/resources/admin/img/mainLogo01.png">
-                    </a>
-                </div>
-                <a href="adminMain.jsp"><div class="admin_menu">메인화면</div></a>
-                <a href="adminMemberInfo.jsp"><div class="admin_menu">회원정보</div></a>
-                <a href="adminProductInfo.jsp"><div class="admin_menu">상품관리</div></a>
-                <a href="${pageContext.request.contextPath}/board/view/boardList.jsp"><div class="admin_menu">문의게시판</div></a>
-            </div>
+    	<%@ include file="aside.jsp" %>
 
             <div class="admin_productInfo">
                 <div class="PageName" style="margin: 50px auto;"><h2>상품 리스트</h2><hr style="width: 90%;"></div>
@@ -293,7 +283,7 @@
                     </div>
 
                     <div class="memberInfo_search">
-                        <button onclick="location.href='admin_productRegist.html'">상품등록버튼</button>
+                        <button onclick="location.href='adminProductRegist.jsp'">상품등록버튼</button>
                     </div><br>
 
                     <div class="pageing" style="margin: 15px auto;">
