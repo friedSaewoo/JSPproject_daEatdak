@@ -23,7 +23,7 @@
     <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
 
     <style>
-        img:not(.mainLogo) {
+        img:not(.mainLogo, .w-full) {
             width: 250px;
             height: 250px;
             float: left;
@@ -39,9 +39,9 @@
         
         .dz-clickable {
             width: 80px;
-            height: 1hv;
-            margin-right: 10px;
+            margin-right: -90px;
             float: right;
+
         }
 
         .pt-1  {
@@ -64,8 +64,10 @@
 
         .w-full{
             float: left;
-            width: 250px;
-            height: 100px;
+            width: 600px;
+            height: 350px;
+            margin-top: 10px;
+            margin-left: 40px;
         }
 
 
@@ -74,12 +76,16 @@
         }
         .dropzone img {
             position: absolute;
-            margin-top: 50px;
-            margin-left: -40px;
-            width: 50px; 
-            height: 40px; 
+            margin-top: -15px;
+            margin-left: -30px;
+            width: 15px; 
+            height: 15px; 
             cursor: pointer;
         }
+        .dropzone img:hover, .dropzone span:hover {
+            cursor: pointer;
+        }
+
 
 
     </style>
@@ -92,15 +98,22 @@
             <div class="aside">
                 
                 <div class="main_logo">
-                    <a href="${pageContext.request.contextPath}/index.jsp">
-                        <img style="width: 140px;" src="${pageContext.request.contextPath}/resources/admin/img/mainLogo01.png">
+                    <a href="../../common/html/index.html">
+                        <img style="width: 140px;" src="../img/mainLogo01.png" class="mainLogo">
                     </a>
                 </div>
-                <a href="adminMain.jsp"><div class="admin_menu">메인화면</div></a>
-                <a href="adminMemberInfo.jsp"><div class="admin_menu">회원정보</div></a>
-                <a href="adminProductInfo.jsp"><div class="admin_menu">상품관리</div></a>
+                <a href="admin_main.html">
+                    <div class="admin_menu">메인화면</div>
+                </a>
+                <a href="admin_memberInfo.html">
+                    <div class="admin_menu">회원정보</div>
+                </a>
+                <a href="admin_productInfo.html">
+                    <div class="admin_menu">상품관리</div>
+                </a>
                 <a href="${pageContext.request.contextPath}/board/view/boardList.jsp"><div class="admin_menu">문의게시판</div></a>
             </div>
+
 
 
             <div class="admin_memberInfo">
@@ -149,11 +162,10 @@
 
 
                         </div>
-    
-                    </div>
-                    <div class="dropzone">
-                        버튼
-                        <img src="../img/camera.png" style="">
+                        <div class="dropzone" style="min-height: 25px;"><span style="font-size: 10px; position: absolute; margin-top: -15px;">선택</span>
+                            <img src="../img/camera.png" class="">
+                        </div>
+        
                     </div>
 
                     <div class="img-List">
@@ -231,6 +243,8 @@
 </script>
 
 </html>
+
+
 
 
 

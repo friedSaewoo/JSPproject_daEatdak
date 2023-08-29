@@ -81,6 +81,9 @@ form {
   height: 50px;
 }
 
+#image {
+	margin: 5px auto;
+}
 
 
 
@@ -93,7 +96,7 @@ form {
 
 .img-List {
   border: 1px dashed blue;
-  width: 850px;
+  width: 1000px;
   height: 400px;
   margin-left: 20px;
   overflow: auto;
