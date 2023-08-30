@@ -1,4 +1,4 @@
-package com.daeatdak.main;
+package com.daeatdak.common;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class MainFrontController
+ * Servlet implementation class CommonFrontController
  */
-@WebServlet("/MainFrontController")
-public class MainFrontController extends HttpServlet {
+@WebServlet("/CommonFrontController")
+public class CommonFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public MainFrontController() {
+    public CommonFrontController() {
         super();
         // TODO Auto-generated constructor stub
     }
