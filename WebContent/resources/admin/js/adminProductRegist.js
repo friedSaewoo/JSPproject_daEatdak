@@ -63,18 +63,20 @@ const dropFile = new DropFile("drop-file", "files");
 function productDel() {
   $(".ins").click(function() {
       var up = confirm("등록 하시겠습니까?");
-      link = "admin_productInfo.html"
+      link = "adminProductInfo.jsp"
       if(up) {
           alert("등록되었습니다.")
           location.href = link;
       }
   })
+  
   $(".imgDel").click(function() {
     alert("테슽");
     $("#image_container img").css("display","none");
   });
+  
   $(".imgsDel").click(function() {
-    $("#images_container img").css("display","none");
+    $(".imgs_container img").css("display","none");
   });
 
 

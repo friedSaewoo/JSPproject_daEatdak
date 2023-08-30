@@ -36,7 +36,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -49,7 +49,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%" class="upndel">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -62,7 +62,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -75,7 +75,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -88,7 +88,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -101,7 +101,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%" class="upndel">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -114,7 +114,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd upla">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -127,7 +127,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>                                <li class="productScope">
@@ -138,7 +138,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -151,7 +151,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%" class="upndel">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -164,7 +164,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -177,7 +177,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>                                <li class="productScope">
@@ -188,7 +188,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -201,7 +201,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%" class="upndel">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -214,20 +214,20 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
 
                                 <li class="productScope">
-                                    <div class="productList">
+                                    <div class="p	roductList">
                                         <div style="width: 10%;"><span>004</span></div>&nbsp;&#124;&nbsp;
                                         <div style="width: 20%;" class="ellipsis"><span>건강식</span></div>&nbsp;&#124;&nbsp;
                                         <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>                                <li class="productScope">
@@ -238,7 +238,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -251,7 +251,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%" class="upndel">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -264,7 +264,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -277,7 +277,7 @@
                                         <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
                                         <div style=" width: 50%">
                                             <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload">수정</button></span>
+                                            <span><button class="btnUpd upload"><a href="${pageContext.request.contextPath}/admin/adminProInfoUp.jsp">수정</a></button></span>
                                         </div>
                                     </div>
                                 </li>
@@ -286,7 +286,7 @@
                     </div>
 
                     <div class="memberInfo_search">
-                        <button onclick="location.href='admin_productRegist.html'">상품등록버튼</button>
+                        <button onclick="location.href='adminProductRegist.jsp'">상품등록버튼</button>
                     </div><br>
 
                     <div class="pageing" style="margin: 15px auto;">

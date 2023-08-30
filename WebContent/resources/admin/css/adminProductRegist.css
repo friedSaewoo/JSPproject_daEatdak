@@ -138,7 +138,7 @@ form {
   box-shadow: inset 0px 0px 10px white;
 }
 
-img:not(.mainLogo, .w-full) {
+#image_container img {
   width: 250px;
   height: 250px;
   float: left;
@@ -216,9 +216,9 @@ p , .pt-1, .dz-default{
 }
 
 .main_logo {
-  margin: 10px auto;
-  text-align: center;
-  width: 140px;
+    margin: 10px auto;
+    text-align: center;
+    width: 140px;
 }
 
 .admin_menu {
@@ -284,12 +284,18 @@ p , .pt-1, .dz-default{
   border: 1px solid lightgrey;
 }
 
-#images_container {
+.imgs_container {
   float: left;
-  width: 500px;
+  width: 800px;
   height: 300px;
-  background-color: lightgray;
+  background-color: white;
   margin-left: 40px;
+  border: 1px solid lightgrey;
+}
+
+.imgs_container img{
+  width: 800px;
+  height: 300px;
   border: 1px solid lightgrey;
 }
 
@@ -315,8 +321,25 @@ p , .pt-1, .dz-default{
   border-radius: 10%;
 }
 
+button {
+  background-color:rgb(202, 46, 46);
+  color: white;
+}
+
 .imgDel {
   background-color:rgb(202, 46, 46);
   color: white;
-  
+}
+
+.imgsDel {
+  background-color:rgb(202, 46, 46);
+  color: white;
+  float: right;
+}
+
+.btnLeft {
+	width: 800px;
+	height: 50px;
+	position: relative;
+	margin-left: 40px;
 }
