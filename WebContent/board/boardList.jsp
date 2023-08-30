@@ -48,7 +48,7 @@
 
               <div class="post">
                 <div class="num">12</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -56,14 +56,14 @@
 
               <div class="post">
                 <div class="num">11</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
               </div>
               <div class="post">
                 <div class="num">10</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 힘들다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 힘들다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -71,14 +71,14 @@
 
               <div class="post">
                 <div class="num">9</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jspl">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jspl">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
               </div>
               <div class="post">
                 <div class="num">8</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -86,7 +86,7 @@
 
               <div class="post">
                 <div class="num">7</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -95,7 +95,7 @@
 
               <div class="post">
                 <div class="num">6</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -103,14 +103,14 @@
 
               <div class="post">
                 <div class="num">5</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
               </div>
               <div class="post">
                 <div class="num">4</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 힘들다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 힘들다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -118,14 +118,14 @@
 
               <div class="post">
                 <div class="num">3</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
               </div>
               <div class="post">
                 <div class="num">2</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -133,7 +133,7 @@
 
               <div class="post">
                 <div class="num">1</div>
-                <div class="title"><a href ="${pageContext.request.contextPath}/board/view/boardView.jsp">코딩 너무 재밌다</a></div>
+                <div class="title"><a href ="${pageContext.request.contextPath}/board/boardView.jsp">코딩 너무 재밌다</a></div>
                 <div class="witer">김성찬</div>
                 <div class="date">2023-08-18</div>
                 <div class="count">1056</div>
@@ -165,7 +165,7 @@
                   <a href="#" class="bt last">>></a> -->
                 </div>
                 <div class="bt-container">
-                    <a href="${pageContext.request.contextPath}/board/view/boardWrite.jsp" class="board-write">등록</a>
+                    <a href="${pageContext.request.contextPath}/board/boardWrite.jsp" class="board-write">등록</a>
                 </div>
           </div>
         </div>
