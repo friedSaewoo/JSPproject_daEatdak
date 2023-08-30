@@ -183,7 +183,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="${pageContext.request.contextPath}/goods/view/ChickenGoodsMain.jsp">
+                                    <a href="${pageContext.request.contextPath}/goods/ChickenGoodsMain.jsp">
                                         <h6>닭고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -292,7 +292,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="${pageContext.request.contextPath}/goods/view/PigGoodsMain.jsp">
+                                    <a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp">
                                         <h6>돼지고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -401,7 +401,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="${pageContext.request.contextPath}/goods/view/CowGoodsMain.jsp">
+                                    <a href="${pageContext.request.contextPath}/goods/CowGoodsMain.jsp">
                                         <h6>소고기 전체보기</h6>
                                     </a>
                                 </div>
@@ -510,7 +510,7 @@
                                     </li>
                                 </ul>
                                 <div class="move-to-menu-button-section">
-                                    <a href="${pageContext.request.contextPath}/goods/view/CFGoodsMain.jsp">
+                                    <a href="${pageContext.request.contextPath}/goods/CFGoodsMain.jsp">
                                         <h6>간편식 전체보기</h6>
                                     </a>
                                 </div>
@@ -652,7 +652,7 @@
                                 <div class="material-detail">
                                     <p>다잇닭</p>
                                     <p>훈제 닭가슴살 100g</p>
-                                    <p><a href="${pageContext.request.contextPath}/goods/view/GoodsBuyPage.jsp">구매하기</a></p>
+                                    <p><a href="${pageContext.request.contextPath}/goods/GoodsBuyPage.jsp">구매하기</a></p>
                                 </div>
                             </dd>                            
                         </dl>

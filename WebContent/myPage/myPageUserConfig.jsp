@@ -33,17 +33,17 @@
         <div class="sidemenu">
           <!-- 사이드 메뉴바 아이템 -->
             <div class="side-item">
-              <a href="${pageContext.request.contextPath}/myPage/view/myPageMain.jsp">
+              <a href="${pageContext.request.contextPath}/myPage/myPageMain.jsp">
                 <div class="content-text on">회원정보 수정</div>
               </a> 
             </div>
             <div class="side-item">
-              <a href="${pageContext.request.contextPath}/myPage/view/myPagePurchaseHistory.jsp">
+              <a href="${pageContext.request.contextPath}/myPage/myPagePurchaseHistory.jsp">
                 <div class="content-text">구매 내역</div>
               </a>
             </div>
             <div class="side-item">
-              <a href="${pageContext.request.contextPath}/myPage/view/myPageWishList.jsp">
+              <a href="${pageContext.request.contextPath}/myPage/myPageWishList.jsp">
                 <div class="content-text">찜 목록</div>
               </a>
             </div>

@@ -35,7 +35,7 @@
                             <div class="list">
                             	<form action="" method="get">
                                 <figure class="img">
-                                    <a href="${pageContext.request.contextPath}/goods/view/GoodsBuyPage.jsp">
+                                    <a href="${pageContext.request.contextPath}/goods/GoodsBuyPage.jsp">
                                         <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
                                     </a>
                                 </figure>

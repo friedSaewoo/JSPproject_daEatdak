@@ -52,14 +52,14 @@
                             <button>로그인</button>                       
                         </div>
                         <div class="button-found">
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/findPw.jsp' ">비밀번호 찾기</button>
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/findId.jsp'  ">아이디 찾기</button>
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/findPw.jsp' ">비밀번호 찾기</button>
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/findId.jsp'  ">아이디 찾기</button>
                         </div>
                         <div class="button-kakaologin">
                             <button type="button" onclick="location.href='/login/html/kakaologin.html' "><img src="${pageContext.request.contextPath}/resources/member/img/kakao_login.png" alt=""></button>
                         </div>
                         <div class="button-signup">
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/signupSelect.jsp' ">회원가입</button>  
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/signupSelect.jsp' ">회원가입</button>  
                         </div>
                     </form>
                 </div>
