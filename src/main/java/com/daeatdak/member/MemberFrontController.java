@@ -1,4 +1,4 @@
-package com.daeatdak.user;
+package com.daeatdak.member;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class UserFrontController
  */
 @WebServlet("/UserFrontController")
-public class UserFrontController extends HttpServlet {
+public class MemberFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public UserFrontController() {
+    public MemberFrontController() {
         super();
         // TODO Auto-generated constructor stub
     }
