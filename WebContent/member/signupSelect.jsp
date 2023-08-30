@@ -46,11 +46,11 @@
                         <div class="input-group">                        
                         <div class="button-normal">
                             <div class="button-normal-section">  
-                            <a type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/signUp.jsp'" >아이디로 시작하기</a> 
+                            <a type="button" onclick="location.href='${pageContext.request.contextPath}/member/signUp.jsp'" >아이디로 시작하기</a> 
                             </div>                     
                         </div>
                         <div class="button-kakao">
-                            <a type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/kakaoLogin.jsp'" >
+                            <a type="button" onclick="location.href='${pageContext.request.contextPath}/member/kakaoLogin.jsp'" >
                              <img src="${pageContext.request.contextPath}/resources/member/img/kakao_signup.png" alt="">
                             </a>
                         </div>
