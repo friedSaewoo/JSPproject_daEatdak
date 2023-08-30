@@ -21,14 +21,14 @@
             <div class="float-user-menu">
                 <ul>
                     <li>
-                        <a href="${pageContext.request.contextPath}/board/view/boardList.jsp">
+                        <a href="${pageContext.request.contextPath}/board/boardList.jsp">
                             <span class="material-symbols-outlined">
                                 support_agent
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/goods/view/GoodsContainCart.jsp">
+                        <a href="${pageContext.request.contextPath}/goods/GoodsContainCart.jsp">
                             <span class="material-symbols-outlined">
                                 shopping_cart
                             </span>

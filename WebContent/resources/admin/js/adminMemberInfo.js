@@ -192,8 +192,6 @@ $('document').ready(function(){
 	filter();
 
 	$('.pagination tr:first-child').addClass("disabled");
-	
-
 
 	});
 

@@ -72,7 +72,11 @@
                             <input type="text" id="address_detail" placeholder="상세주소 입력" maxlength="100" >                            
                         </div>    
                         <div class="button-signup">
+<<<<<<< HEAD
                             <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/login.jsp' " >가입완료</button>             
+=======
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/login.jsp' ">가입완료</button>             
+>>>>>>> main
                         </div>    
                     </form>                   
                 </div>
