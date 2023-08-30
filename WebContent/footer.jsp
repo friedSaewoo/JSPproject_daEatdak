@@ -16,13 +16,13 @@
         <div class="footer-term-container">
             <div class="footer-term-section">
                 <ul>
-                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_1.jsp">개인정보처리방침</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/termPage/term_1.jsp">개인정보처리방침</a></li>
                     <li>|</li>
-                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_2.jsp">개인정보취급방침</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/termPage/term_2.jsp">개인정보취급방침</a></li>
                     <li>|</li>
-                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_3.jsp">개인정보수집 및 이용</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/termPage/term_3.jsp">개인정보수집 및 이용</a></li>
                     <li>|</li>
-                    <li><a href="${pageContext.request.contextPath}/common/view/termPage/term_4.jsp">이용약관</a></li>
+                    <li><a href="${pageContext.request.contextPath}/common/termPage/term_4.jsp">이용약관</a></li>
                 </ul>
             </div>
         </div>
@@ -70,7 +70,7 @@
                         <p>FAX. 02-2135-2949</p>
                     </dd>
                     <dd>
-                        <a href="${pageContext.request.contextPath}/board/view/boardList.jsp">문의하기</a>
+                        <a href="${pageContext.request.contextPath}/board/boardList.jsp">문의하기</a>
                     </dd>
                 </dl>
             </div>
