@@ -1,87 +1,313 @@
-#root {
-    width: 100%;
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  
-  .title {
+body {
+  background-color: white;
+}
+main {
+  max-width: 1200px;
+  height: 100%;
+  margin: 40px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  width: 810px;
+}
+
+li {
+  margin: 10px auto;
+}
+
+.btnUpd {
+  margin-top: 8px;
+  margin-right: 10px;
+  text-align: center;
+  width: 60px;
+  line-height : 30px;
+  float: right;
+  font-size: 15px;
+  background-color:rgb(202, 46, 46);
+  border-radius: 10%; 
+  color: white;
+}
+
+.main_logo {
+  margin: 10px auto;
+  text-align: center;
+  width: 140px;
+}
+
+.admin_menu {
+  padding : 25px;
+  text-align : center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  margin: 10px 10px auto;
+}
+
+.admin_menu:hover {
+  color: rgb(202, 46, 46);
+  cursor: pointer;
+}
+
+.admin_productInfo {
+    /* margin: 0px auto;
     text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%; */
+    display: flex;
+    flex-direction: column;
+    top:12%;
+    left: 31%;
+    width: 1000px;
+    min-height:550px;
+    height:100%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.totalProdList {
+  padding-top: 10px;
+  margin-top: 10px;
+  width: 900px;
+  height: 79%;
+}
+
+.productScope {
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.ellipsis {
+  overflow: hidden;  		/* 을 사용해 영역을 감출 것*/
+  text-overflow: ellipsis;  	/* 로 ... 을 만들기 */
+  white-space: nowrap; 		/* 아래줄로 내려가는 것을 막기위해 */
+  word-break:break-all;
+  width: 80px;
+  height: 40px;
+}
+
+.productList:not(.btnUpd) {
+  display: flex;
+  height: 50px;
+  text-align: center;
+  line-height : 50px;
+  width: 800px;
+}
+
+.productList span{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.memberInfo_search {
+  float: right;
+  margin-right: 110px;
+  vertical-align: bottom;
+  align-items: flex-end;
+  bottom: 10%;
+}
+.memberInfo_search button {
+  background-color:rgb(202, 46, 46);
+  border-radius: 10%; 
+  color: white;
+}
+
+.memberInfo_search button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.pageing div:not(.board-page) {
+  border: 1px solid rgb(202, 46, 46);
+}
+
+#pagination a {
+  display:inline-block;
+  margin-right:5px;
+  cursor:pointer;
   }
-  
+
+.pagination {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.pagination #lastPage {
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  -webkit-order: 3;
+  order: 3;
+  cursor: pointer;
+
+}
+
+.board-page {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  font-size: 0;
+  margin: 30px auto;
+  width: 35%;
+}
+
+.board-page a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  border-left: 0;
+  line-height: 100%;
+  font-size: 15px;
+}
+
+#firstPage {
+  cursor: pointer;
+}
+
+.pagination #lastPage {
+  -webkit-box-ordinal-group: 3;
+  -moz-box-ordinal-group: 3;
+  -ms-flex-order: 3;
+  -webkit-order: 3;
+  order: 3;
+  cursor: pointer;
+
+}
+
+.PageName {
+  margin: 0 auto;
+}
+
+.table-div {
+  margin: 10px auto;
+  height: 75%;
+  max-width: 95%;
+  overflow: hidden;
+}
+
+.main_logo {
+  margin: 10px auto;
+  text-align: center;
+  width: 140px;
+}
+
+
+.btn01 {
+  padding-top: 9px;
+}
+
+.section-container{
+  margin: 5px 5px 5px 5px;
+  height: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside {
+  min-width: 211px;
+  height: 90%;
+  border: 1px solid rgb(26, 26, 26);
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.title {
+  text-align: center;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  height: 350px;
+}
+.contents .upload-box {
+  width: 100%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents .upload-box .drag-file {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px dashed #dbdbdb;
+}
+.contents .upload-box .drag-file.highlight {
+  border: 3px dashed red;
+}
+.contents .upload-box .drag-file .image {
+  width: 40px;
+}
+.contents .upload-box .drag-file .message {
+  margin-bottom: 0;
+}
+.contents .upload-box .drag-file .preview {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+}
+.contents .upload-box .file-label {
+  margin-top: 30px;
+  background-color: #5b975b;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  width: 65%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contents .upload-box .file {
+  display: none;
+}
+
+@media (max-width: 700px) {
   .contents {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 30px;
-    height: 350px;
   }
   .contents .upload-box {
     width: 100%;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box;
+    margin-right: 0;
   }
-  
   .contents .upload-box .drag-file {
-    position: relative;
+    height: 150px;
+  }
+  .contents .files {
     width: 100%;
-    height: 360px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 3px dashed #dbdbdb;
+    box-sizing: border-box;
+    margin-right: 0;
+    overflow: initial;
   }
-  .contents .upload-box .drag-file.highlight {
-    border: 3px dashed red;
-  }
-  .contents .upload-box .drag-file .image {
-    width: 40px;
-  }
-  .contents .upload-box .drag-file .message {
-    margin-bottom: 0;
-  }
-  .contents .upload-box .drag-file .preview {
-    display: none;
-    position: absolute;
-    left: 0;
-    height: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .contents .upload-box .file-label {
-    margin-top: 30px;
-    background-color: #5b975b;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    width: 65%;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .contents .upload-box .file {
-    display: none;
-  }
-  
-  @media (max-width: 700px) {
-    .contents {
-      display: flex;
-      flex-direction: column;
-      margin-top: 30px;
-    }
-    .contents .upload-box {
-      width: 100%;
-      box-sizing: border-box;
-      margin-right: 0;
-    }
-    .contents .upload-box .drag-file {
-      height: 150px;
-    }
-    .contents .files {
-      width: 100%;
-      box-sizing: border-box;
-      margin-right: 0;
-      overflow: initial;
-    }
-  }
+}

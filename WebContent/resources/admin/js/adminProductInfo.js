@@ -83,7 +83,14 @@ function pagination(){
 	
 }
 
+
+
+
+
+
+
 function productDel() {
+	
     $(".del").click(function() {
         var del = confirm("삭제 하시겠습니까?");
         if(del){
@@ -91,21 +98,21 @@ function productDel() {
         }
     })
 
+  $(".upla").click(function() {
+      var up = confirm("등록 하시겠습니까?");
+      link = "admin_productInfo.html"
+      if(up) {
+          alert("등록되었습니다.")
+          location.href = link;
+      }
+  })
+
     $(".upload").click(function() {
         link = "adminProInfoUp.jsp"
-            location.href = link;
-    })
-
-    $(".ins").click(function() {
-        var up = confirm("등록 하시겠습니까?");
-        link = "adminProductInfo.jsp"
         if(up) {
-            alert("등록되었습니다.")
-            location.href = link;
-        }
+		location.href = link;	
+		}
     })
-
-
 
 }
 
