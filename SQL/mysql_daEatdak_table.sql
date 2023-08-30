@@ -3,10 +3,17 @@ drop database jsp_daEatdak;
 
 use jsp_daEatdak;
 
+CREATE TABLE address (
+	address_num	int	unsigned auto_increment primary key,
+	address	varchar(100)	NOT NULL,
+	road_address	varchar(100)	NOT NULL,
+	detail_address	varchar(100)	NOT NULL
+);
+
 -- phone num varchar로 변경
 CREATE TABLE users (
 	user_num	int	unsigned auto_increment primary key,
-	address_num	int	NULL,
+	address_num	int unsigned NULL,
 	user_email	varchar(255)	NOT NULL,
 	user_name	varchar(50)	NOT NULL,
 	user_password	varchar(50)	NOT NULL,
@@ -50,12 +57,7 @@ CREATE TABLE image (
     foreign key (goods_num) references goods (goods_num)
 );
 
-CREATE TABLE address (
-	address_num	int	unsigned auto_increment primary key,
-	address	varchar(100)	NOT NULL,
-	road_address	varchar(100)	NOT NULL,
-	detail_address	varchar(100)	NOT NULL
-);
+
 
 CREATE TABLE orders (
 	order_num	int	unsigned auto_increment primary key,

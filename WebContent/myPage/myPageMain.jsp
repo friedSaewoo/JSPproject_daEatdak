@@ -33,17 +33,17 @@
         <div class="sidemenu">
           <!-- 사이드 메뉴바 아이템 -->
             <div class="side-item">
-              <a href="${pageContext.request.contextPath}/myPage/view/myPageMain.jsp">
+              <a href="${pageContext.request.contextPath}/myPage/myPageMain.jsp">
                 <div class="content-text on">회원정보 수정</div>
               </a> 
             </div>
             <div class="side-item">
-              <a href="${pageContext.request.contextPath}/myPage/view/myPagePurchaseHistory.jsp">
+              <a href="${pageContext.request.contextPath}/myPage/myPagePurchaseHistory.jsp">
                 <div class="content-text">구매 내역</div>
               </a>
             </div>
             <div class="side-item">
-              <a href="${pageContext.request.contextPath}/myPage/view/myPageWishList.jsp">
+              <a href="${pageContext.request.contextPath}/myPage/myPageWishList.jsp">
                 <div class="content-text">찜 목록</div>
               </a>
             </div>
@@ -62,7 +62,7 @@
                         <input class="content-password" type="password" id="inputPassword" maxlength="4">
                         <div class="inner-btnBox">
                             <button class="btn cancle" onclick="history.go(-1)">취소</button>
-                            <button class="btn admit" onclick="location.href='${pageContext.request.contextPath}/myPage/view/myPageUserConfig.jsp'">확인</button>
+                            <button class="btn admit" onclick="location.href='${pageContext.request.contextPath}/myPage/myPageUserConfig.jsp'">확인</button>
                         </div>
                     </div>
                 </div>

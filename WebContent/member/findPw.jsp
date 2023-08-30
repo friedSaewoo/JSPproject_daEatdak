@@ -53,7 +53,7 @@
                             <button>확인</button>                       
                         </div>
                         <div class="login-back">
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/view/login.jsp' ">로그인 창으로 돌아가기</button>
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/login.jsp' ">로그인 창으로 돌아가기</button>
                         </div>
                         <h2 id="txt">회원 비밀번호 출력 영역</h2>
                             
