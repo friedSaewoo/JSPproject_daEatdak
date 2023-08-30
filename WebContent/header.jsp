@@ -31,7 +31,7 @@
             <div class="user-container">
                 <ul>
                     <li>
-                        <a href="${pageContext.request.contextPath}/member/view/login.jsp">
+                        <a href="${pageContext.request.contextPath}/member/login.jsp">
                             <span class="material-symbols-outlined">
                                 lock
                             </span>
@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/member/view/signupSelect.jsp">
+                        <a href="${pageContext.request.contextPath}/member/signupSelect.jsp">
                             <span class="material-symbols-outlined">
                                 person_add
                             </span>
@@ -47,7 +47,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/board/view/boardList.jsp">
+                        <a href="${pageContext.request.contextPath}/board/boardList.jsp">
                             <span class="material-symbols-outlined">
                                 support_agent
                             </span>
@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/goods/view/GoodsContainCart.jsp">
+                        <a href="${pageContext.request.contextPath}/goods/GoodsContainCart.jsp">
 
                             <span class="material-symbols-outlined">
                                 shopping_cart
@@ -75,13 +75,13 @@
             <div class="nav-ul-container">
                 <nav>
                     <ul>
-                        <li><a href="${pageContext.request.contextPath}/goods/view/ChickenGoodsMain.jsp"><h4>닭고기</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/ChickenGoodsMain.jsp"><h4>닭고기</h4></a></li>
                         <li><h4>|</h4></li>
-                        <li><a href="${pageContext.request.contextPath}/goods/view/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
                         <li><h4>|</h4></li>
-                        <li><a href="${pageContext.request.contextPath}/goods/view/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
                         <li><h4>|</h4></li>
-                        <li><a href="${pageContext.request.contextPath}/goods/view/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
+                        <li><a href="${pageContext.request.contextPath}/goods/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
                     </ul>
                 </nav>
             </div>
@@ -116,13 +116,13 @@
                 <div class="nav-fix-menu">
                     <nav>
                         <ul>
-                            <li><a href="${pageContext.request.contextPath}/goods/view/ChickenGoodsMain.jsp"><h4>닭고기</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/ChickenGoodsMain.jsp"><h4>닭고기</h4></a></li>
                             <li><h4>|</h4></li>
-                            <li><a href="${pageContext.request.contextPath}/goods/view/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
                             <li><h4>|</h4></li>
-                            <li><a href="${pageContext.request.contextPath}/goods/view/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
                             <li><h4>|</h4></li>
-                            <li><a href="${pageContext.request.contextPath}/goods/view/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
+                            <li><a href="${pageContext.request.contextPath}/goods/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
                         </ul>
                     </nav>
                 </div>

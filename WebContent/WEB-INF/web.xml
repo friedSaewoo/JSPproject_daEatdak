@@ -10,23 +10,65 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
   
- <!--
+	<!-- 회원 -->
   <servlet>
   	<servlet-name>Member</servlet-name>
-  	<servlet-class>com.example.app.member.MemberFrontController</servlet-class>
+  	<servlet-class>com.daeatdak.member.MemberFrontController</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Member</servlet-name>
   	<url-pattern>*.me</url-pattern>
   </servlet-mapping>
--->
+
+	<!-- 게시판 -->
   <servlet>
   	<servlet-name>Board</servlet-name>
-  	<servlet-class>com.daeatdak.BoardFrontController</servlet-class>
+  	<servlet-class>com.daeatdak.board.BoardFrontController</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Board</servlet-name>
   	<url-pattern>*.bo</url-pattern>
   </servlet-mapping>
   
+  	<!-- 상품 -->
+  <servlet>
+  	<servlet-name>Goods</servlet-name>
+  	<servlet-class>com.daeatdak.goods.GoodsFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Goods</servlet-name>
+  	<url-pattern>*.go</url-pattern>
+  </servlet-mapping>
+  
+  	<!-- 관리자 -->
+  <servlet>
+  	<servlet-name>Admin</servlet-name>
+  	<servlet-class>com.daeatdak.admin.AdminFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Admin</servlet-name>
+  	<url-pattern>*.ad</url-pattern>
+  </servlet-mapping>
+  
+    <!-- 메인 -->
+  <servlet>
+  	<servlet-name>Common</servlet-name>
+  	<servlet-class>com.daeatdak.common.CommonFrontController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Common</servlet-name>
+  	<url-pattern>*.co</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
+
+
+
+
+
+
+
+
+
+
+

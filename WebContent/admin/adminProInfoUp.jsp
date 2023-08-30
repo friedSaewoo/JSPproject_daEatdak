@@ -111,7 +111,7 @@
                 <a href="admin_productInfo.html">
                     <div class="admin_menu">상품관리</div>
                 </a>
-                <a href="${pageContext.request.contextPath}/board/view/boardList.jsp"><div class="admin_menu">문의게시판</div></a>
+                <a href="${pageContext.request.contextPath}/board/boardList.jsp"><div class="admin_menu">문의게시판</div></a>
             </div>
 
 

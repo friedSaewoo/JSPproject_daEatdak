@@ -47,9 +47,9 @@
                 <textarea></textarea>
               </div>
               <div class="write-bottom">
-                <a href="${pageContext.request.contextPath}/board/view/boardList.jsp" class="write-btn list">목록으로</a>
+                <a href="${pageContext.request.contextPath}/board/boardList.jsp" class="write-btn list">목록으로</a>
 
-                <a href="${pageContext.request.contextPath}/board/view/boardList.jsp" class="write-btn write">글 등록</a>
+                <a href="${pageContext.request.contextPath}/board/boardList.jsp" class="write-btn write">글 등록</a>
               </div>
             </div>
         </div>
