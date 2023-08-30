@@ -92,13 +92,13 @@ function productDel() {
     })
 
     $(".upload").click(function() {
-        link = "adminProInfoUp.jsp"
+        link = "admin_proInfoUp.html"
             location.href = link;
     })
 
     $(".ins").click(function() {
         var up = confirm("등록 하시겠습니까?");
-        link = "adminProductInfo.jsp"
+        link = "admin_productInfo.html"
         if(up) {
             alert("등록되었습니다.")
             location.href = link;

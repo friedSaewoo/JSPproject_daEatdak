@@ -7,14 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다잇닭</title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/adminMain.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/adminProductInfo.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/imgUpload.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/adminProductUp.css">
 
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="${pageContext.request.contextPath}/resources/admin/js/adminProductInfo.js"></script>
-    <script src="${pageContext.request.contextPath}/resources/admin/js/adminProductRegist.js"></script>
+    <script src="${pageContext.request.contextPath}/resources/admin/js/adminProductUp.js"></script>
 
 
     <!-- Plugin -->
@@ -116,10 +113,12 @@
 
 
 
-            <div class="admin_memberInfo">
-                <div class="PageName" style="margin: 50px auto;">
-                    <h2>상품 수정</h2><hr style="width: 90%;">
+            <div class="admin_proInfoUp">
+                <div class="PageName">
+                    <h2>상품 수정</h2>
                 </div>
+                <hr style="width: 90%;">
+
                 <div class="Rege">
                     <div class="totalProdList">
                         <div class="registerPage">
@@ -168,36 +167,9 @@
         
                     </div>
 
-                    <div class="img-List">
-                        <ul class="list-unstyled mb-0" id="dropzone-preview">
-                            <li class="mt-2" id="dropzone-preview-list">
-                                <div class="border rounded-3">
-                                    <div class="d-flex align-items-center p-2">
-                                        <div class="flex-shrink-0 me-3">
-                                            <div class="width-8 h-auto rounded-3">
-                                                    <img data-dz-thumbnail="data-dz-thumbnail" class="w-full h-auto rounded-3 block" src="#"
-                                                        alt="Dropzone-Image" />
-                                            </div>
-                                        </div>
-                                        <div class="flex-grow-1">
-                                            <div class="pt-1">
-                                                <h6 class="font-semibold mb-1" data-dz-name="data-dz-name">&nbsp;</h6>
-                                                <p class="text-sm text-muted fw-normal" data-dz-size="data-dz-size"></p>
-                                                <strong class="error text-danger" data-dz-errormessage="data-dz-errormessage"></strong>
-                                            </div>
-                                        </div>
-                                        <div class="shrink-0 ms-3">
-                                            <button data-dz-remove="data-dz-remove" class="btn btn-sm btn-danger">Delete</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-        
-                </div>
                 <div class="productRegist-btn">
                     <div>
-                        <button class="ins" style="width: 80px; height: 40px;">수정하기</button>
+                        <button class="upload" style="width: 80px; height: 40px;">수정하기</button>
                     </div>
                 </div>
         
@@ -227,24 +199,9 @@
 
 
     
-          Dropzone.autoDiscover = false;
-          var dropzonePreviewNode = document.querySelector('#dropzone-preview-list');
-          dropzonePreviewNode.id = '';
-          var previewTemplate = dropzonePreviewNode.parentNode.innerHTML;
-          dropzonePreviewNode.parentNode.removeChild(dropzonePreviewNode);
-    
-          const dropzone = new Dropzone(".dropzone", {
-            url: "https://httpbin.org/post", // 파일을 업로드할 서버 주소 url. 
-            method: "post", // 기본 post로 request 감. put으로도 할수있음
-    
-            previewTemplate: previewTemplate, // 만일 기본 테마를 사용하지않고 커스텀 업로드 테마를 사용하고 싶다면
-            previewsContainer: '#dropzone-preview', // 드롭존 영역을 .dropzone이 아닌 다른 엘리먼트에서 하고싶을때
-          });
 </script>
 
 </html>
-
-
 
 
 

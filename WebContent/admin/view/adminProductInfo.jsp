@@ -6,21 +6,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다잇닭</title>
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/adminMain.css">
+    
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/admin/css/adminProductInfo.css">
+    <script src="${pageContext.request.contextPath}/resources/admin/js/adminProductInfo.js" defer></script>
+    
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <script src="${pageContext.request.contextPath}/resources/admin/js/adminProductInfo.js"></script>
 
 </head>
+
 <body>
     <main class="test">
         <div class="section-container">  <!-- 좌측 관리자 메뉴-->             
     	<%@ include file="aside.jsp" %>
 
             <div class="admin_productInfo">
-                <div class="PageName" style="margin: 50px auto;"><h2>상품 리스트</h2><hr style="width: 90%;"></div>
+                <div class="PageName">
+                    <h2>상품 리스트</h2>
+                </div>
+                <hr style="width: 90%;">
 
                 <div class="table-div">
-
                     <div class="totalProdList">
                             <ul class="proUl">
                                 <li class="productScope">
@@ -278,12 +283,10 @@
                                 </li>
                             </ul>
 
-
-        
                     </div>
 
                     <div class="memberInfo_search">
-                        <button onclick="location.href='adminProductRegist.jsp'">상품등록버튼</button>
+                        <button onclick="location.href='admin_productRegist.html'">상품등록버튼</button>
                     </div><br>
 
                     <div class="pageing" style="margin: 15px auto;">
@@ -292,8 +295,8 @@
                             <div class="arrowPage nt" id="lastPage"><a class="btn01">&gt;</a></div>
                         </div>
                     </div><br>
-    
-    
+
+
 
                 </div>
 

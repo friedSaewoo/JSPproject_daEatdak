@@ -32,7 +32,6 @@ function DropFile(dropAreaId, fileListId) {
   
     function handleFiles(files) {
       files = [...files];
-      // files.forEach(uploadFile);
       files.forEach(previewFile);
     }
   
@@ -51,16 +50,36 @@ function DropFile(dropAreaId, fileListId) {
       };
     }
   
-//    dropArea.addEventListener("dragenter", highlight, false);
-//    dropArea.addEventListener("dragover", highlight, false);
-//    dropArea.addEventListener("dragleave", unhighlight, false);
-//    dropArea.addEventListener("drop", handleDrop, false);
   
     return {
       handleFiles
     };
 
-    alert("테스트");
   }
   
   const dropFile = new DropFile("drop-file", "files");
+
+
+  function productDel() {
+    $(".upload").click(function() {
+        var up = confirm("수정 하시겠습니까?");
+        link = "admin_productInfo.html"
+        if(up) {
+            alert("수정되었습니다.")
+            location.href = link;
+        }
+    })
+
+
+
+}
+
+$('document').ready(function(){
+    productDel();
+	$('.pagination li:first-child').addClass("disabled");
+	
+	});
+
+
+
+
