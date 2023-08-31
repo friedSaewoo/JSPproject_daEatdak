@@ -8,10 +8,11 @@
          value(#{userEmail}, #{userName}, #{userPassword}, #{userPhone}, #{userAddress}, #{userDetailAddress})
    </select>
    
-<!--    <select id ="login" parameterType="com.example.app.dto.MemberDTO" resultType="com.example.app.dto.MemberDTO">
-   		select * from tbl_member
-   		where member_id = #{memberId} AND member_password = #{memberPassword}
-   </select> -->
+	<select id="userInfoSearch" resultType="UserDTO">
+		
+		select * from tbl_user
+	
+	</select>
    
      
 </mapper>
