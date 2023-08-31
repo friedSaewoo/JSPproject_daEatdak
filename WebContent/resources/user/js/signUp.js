@@ -2,7 +2,7 @@
  * 
  */
 
-
+/*
  var userEmail = document.getElementById("email");
  var emailResult = document.getElementById("emailResult");
  let userName = document.getElementById("name");
@@ -19,4 +19,15 @@
  }
  
  
- 
+ */
+window.onload = function () {
+
+ document.getElementById("PostCodeSearch").onclick = function PostCodeSearch(){
+        new daum.Postcode({
+        oncomplete: function(data) {
+            console.log(data);
+            document.querySelector('#address').value = data.roadAddress;
+        }
+        }).open();
+       }
+       }

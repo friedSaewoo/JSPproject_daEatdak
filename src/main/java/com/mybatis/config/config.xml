@@ -7,7 +7,7 @@
 	
 	<!-- DTO 추가 -->
    <typeAliases>
-      <typeAlias type="com.example.app.dto.MemberDTO" alias = "MemberDTO"/>
+      <typeAlias type="com.daeatdak.user.dto.UserDTO" alias = "UserDTO"/>
    </typeAliases>
 
 

@@ -42,17 +42,18 @@
                     <div class="signupselect-greeting">
                         <strong class="txt">회원가입 방식을 선택해주세요!</strong>
                     </div>
-                    <form id="login_form" name="login_form" action="" method="post" >
+                    <form id="login_form" name="login_form" action="join.me" method="post" >
                         <div class="input-group">                        
                         <div class="button-normal">
                             <div class="button-normal-section">  
-                            <a type="button" onclick="location.href='${pageContext.request.contextPath}/member/signUp.jsp'" >아이디로 시작하기</a> 
-                            </div>                     
+                            <button>시작하기</button>
+<!--                             <a type="button" href="/user/join.me" >아이디로 시작하기</a> 
+ -->                            </div>                     
                         </div>
                         <div class="button-kakao">
-                            <a type="button" onclick="location.href='${pageContext.request.contextPath}/member/kakaoLogin.jsp'" >
+                           <%--  <a type="button" onclick="location.href='${pageContext.request.contextPath}/member/kakaoLogin.jsp'" >
                              <img src="${pageContext.request.contextPath}/resources/member/img/kakao_signup.png" alt="">
-                            </a>
+                            </a> --%>
                         </div>
                             
                         </div>

@@ -11,7 +11,9 @@
 <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/common/img/logoPic.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/member/js/signUp.js" defer></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" ></script>
+
+<script src="${pageContext.request.contextPath}/resources/user/js/signUp.js" defer></script>
 
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -43,7 +45,7 @@
                     <div class="signup-greeting">
                         <strong class="txt">회원가입을 진행해주세요!</strong>
                     </div>
-                    <form id="login_form" name="login_form" action="" method="post" >
+                    <form id="login_form" name="login_form" action="joinOk.me" method="post" >
                         <div class="input-group">
                             
                         <div class="input-text">    
