@@ -58,8 +58,9 @@
                         <div class="button-kakaologin">
                             <button type="button" onclick="location.href='/login/html/kakaologin.html' "><img src="${pageContext.request.contextPath}/resources/member/img/kakao_login.png" alt=""></button>
                         </div>
+                        
                         <div class="button-signup">
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/signupSelect.jsp' ">회원가입</button>  
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/user/signupSelect.jsp'">회원가입</button>  
                         </div>
                     </form>
                 </div>
