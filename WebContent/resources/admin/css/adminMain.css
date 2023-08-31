@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+    width: 810px;
+}
 
 .section-container{
     margin: 5px 5px 5px 5px;
@@ -20,7 +24,7 @@ a {
 }
 
 .aside {
-    width: 211px;
+    min-width: 211px;
     height: 90%;
     border: 1px solid rgb(26, 26, 26);
 }
@@ -37,11 +41,10 @@ a {
     justify-content: center;
     background-color: white;
     color: black;
-/*    border-radius: 5px;*/
     margin: 10px 10px auto;
 }
+
 .admin_menu:hover {
-    background-color: rgb(202, 46, 46);
     cursor: pointer;
 }
 
@@ -50,6 +53,7 @@ a {
     text-align: center;
     width: 140px;
 }
+
 .main-container {
     margin: 0px auto;
     height: 100%;
@@ -59,9 +63,6 @@ a {
     align-items: center;
 }
 
-table {
-    margin: 10px auto;
-}
 .admin_memberInfo, .admin_productInfo {
     margin: 0px auto;
     text-align: center;
@@ -70,6 +71,7 @@ table {
     width: 100%;
 
 }
+
 .Rege {
  background-color: bisque;
 }
@@ -84,7 +86,6 @@ table {
 .memberInfo_search button {
     background-color:rgb(202, 46, 46);
     border-radius: 10%; 
-
 }
 
 .table-div {
@@ -124,12 +125,6 @@ table {
     box-shadow: inset 0px 0px 10px white;
   }
 
-.t_head {
-/*    position: sticky;
-    top: 0;
-    text-align: center;*/
-}
-
 #pagination a {
     display:inline-block;
     margin-right:5px;
@@ -163,10 +158,6 @@ table {
     justify-content: center;
 }
 
-ul {
-    list-style-type: none;
-    width: 810px;
-}
 
 .productList:not(.btnUpd) {
     display: flex;
@@ -272,7 +263,6 @@ li {
     background-color:rgb(202, 46, 46);
     color: white;
     border-radius: 10%;
-
 }
 
 .ins, .upd {
@@ -399,6 +389,8 @@ button:hover {
 .pageing div:not(.board-page) {
     border: 1px solid rgb(202, 46, 46);
 }
+
+
 /*
 .board-page a:first-child {
     border-left: 1px solid #ddd;
