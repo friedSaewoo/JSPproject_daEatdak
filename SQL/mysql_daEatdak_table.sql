@@ -5,15 +5,15 @@ use jsp_daEatdak;
 
 CREATE TABLE address (
 	address_num	int	unsigned auto_increment primary key,
-	address	varchar(100)	NOT NULL,
-	road_address	varchar(100)	NOT NULL,
-	detail_address	varchar(100)	NOT NULL
+	address	varchar(100)	null,
+	road_address	varchar(100)	NULL,
+	detail_address	varchar(100)	NULL
 );
 
 -- phone num varchar로 변경
 CREATE TABLE users (
 	user_num	int	unsigned auto_increment primary key,
-	address_num	int unsigned NULL,
+	address_num	int unsigned not NULL,
 	user_email	varchar(255)	NOT NULL,
 	user_name	varchar(50)	NOT NULL,
 	user_password	varchar(50)	NOT NULL,
