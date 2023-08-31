@@ -38,7 +38,9 @@ public class GoodsFrontController extends HttpServlet {
 		      
 
 		      switch(target) {
-		      case "/member/join.me":
+		      case "/goods/Chicken.go":
+		    	  System.out.println("치킨골랐다");
+		    	  new GoodsListController().execute(request, response);
 		         break;
 		         
 		      case "/member/joinOk.me":
@@ -50,6 +52,7 @@ public class GoodsFrontController extends HttpServlet {
 		      case "/member/loginOk.me":
 		         break;
 		      }
+		      
 		      
 		      if(result != null) {
 		    	  if(result.isRedirect()) {

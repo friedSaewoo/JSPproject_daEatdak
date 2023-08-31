@@ -31,6 +31,7 @@
                 </div>
                 <div class="product-inter">
                     <ul class="product-list">
+                    <!--
                         <li class="list-info">
                             <div class="list">
                             	<form action="" method="get">
@@ -518,6 +519,7 @@
                                 <span class="list-price">21,900원</span>
                             </div>
                         </li>
+                          -->
                     </ul>
                     <div class="pageing">
                         <div class="arrow prev" onclick="">&lt;</div>

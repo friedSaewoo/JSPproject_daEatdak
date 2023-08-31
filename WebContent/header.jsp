@@ -75,7 +75,11 @@
             <div class="nav-ul-container">
                 <nav>
                     <ul>
-                        <li><a href="${pageContext.request.contextPath}/goods/ChickenGoodsMain.jsp"><h4>닭고기</h4></a></li>
+                        <li>
+                        	<form action ="goods/Chicken.go" >
+                        		<button><h4>닭고기</h4></button>
+                        	</form>
+                        </li>
                         <li><h4>|</h4></li>
                         <li><a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
                         <li><h4>|</h4></li>
