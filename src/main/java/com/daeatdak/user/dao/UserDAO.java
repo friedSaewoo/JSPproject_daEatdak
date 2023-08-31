@@ -26,4 +26,10 @@ public class UserDAO {
 		list = sqlSession.selectList("user.userInfoSearch");
 		return list;
 	}
+	
+	//아이디 중복검사 메소드
+		//selectOne의 반환타입은 object 타입이다. 비교를하기 위해서 Integer타입으로 형변환한다.
+		public boolean checkId(String userId) {
+			return (Integer)sqlSession.selectOne("user.checkId", userId) <=0;
+		}
 }

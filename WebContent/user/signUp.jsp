@@ -17,6 +17,7 @@
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" ></script>
 
 <script src="${pageContext.request.contextPath}/resources/user/js/signUp.js" defer></script>
+<script src="${pageContext.request.contextPath}/resources/user/js/signUpAjax.js" defer></script>
 
 <meta charset="UTF-8">
 <title>Insert title here</title>
@@ -49,16 +50,14 @@
                         <strong class="txt">회원가입을 진행해주세요!</strong>
                     </div>
                     <form id="login_form" name="login_form" action="joinOk.me" method="post" >
-                        <div class="input-group">
                             
                         <div class="input-text">    
                             <input type="text" id="email" name="userEmail" placeholder="이메일 입력" maxlength="100" >
-                            <h2 id="emailResult"></h2>  
-                            <input type="button" style="width: 80px; margin-bottom: -2px;" id="id_request" value="중복확인"></button>&nbsp;<span id="here"></span>
-                            <input type="text" name ="userName" id="pw"  placeholder="이름 입력" maxlength="100" >
+                            <h2 class="checkId-result"></h2>  
+                            <input type="text" name ="userName" id="name"  placeholder="이름 입력" maxlength="100" >
                                                  
-                            <input type="password" name ="userPassword" id="pw" onchange="check_pw()" placeholder="비밀번호 입력" maxlength="100" >
-                            <input type="password" name="userPassword2" id="pw2" onchange="check_pw()" placeholder="비밀번호 확인" maxlength="100" style="margin-bottom: -2px;">&nbsp;<span id="check"></span>
+                            <input type="password" name ="userPassword" id="pw"  placeholder="비밀번호 입력" maxlength="100" >
+                            <input type="password" name="userPassword2" id="pw2" placeholder="비밀번호 확인" maxlength="100" style="margin-bottom: -2px;">&nbsp;<span id="check"></span>
                             
                             <input type="text" id="phonenumber" name="userPhone" placeholder="휴대폰 번호 입력" maxlength="100" >
                             <input type="text" id="address" placeholder="주소 입력" name="userAddress" maxlength="100" style="width: 330px; margin-bottom: 20px;">
@@ -66,7 +65,7 @@
                             <input type="text" id="address_detail" name="userDetailAddress" placeholder="상세주소 입력" maxlength="100" >                            
                         </div>    
                         <div class="button-signup">
-                            <button  onclick="">가입완료</button>             
+                            <button class="sign-btn" disabled onclick="return join()">가입완료</button>             
                         </div>    
                     </form>                   
                 </div>

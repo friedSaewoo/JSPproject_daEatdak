@@ -60,6 +60,10 @@ public class UserFrontController extends HttpServlet {
 			System.out.println("joinOk");
 			result = new JoinOkController().execute(request, response);
 			break;
+			
+		case "/user/checkIdOk.me":
+			System.out.println("checkId");
+			new CheckIdOkController().execute(request, response);
 		
 		}
 		
