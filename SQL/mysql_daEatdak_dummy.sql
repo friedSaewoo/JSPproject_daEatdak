@@ -69,7 +69,7 @@ INSERT INTO goods (category_num, goods_name, goods_price, goods_quantity, sale_c
 (4, 'Product 4-9', 14, 85, 0),
 (4, 'Product 4-10', 28, 55, 0);
 
-
+SELECT * FROM goods WHERE category_num =1;
 
 
 

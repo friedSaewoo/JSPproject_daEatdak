@@ -12,7 +12,7 @@
    		where member_id = #{memberId} AND member_password = #{memberPassword}
    </select>
   -->
-  <select id ="selectCategory" resultType ="GoodsDTO">
+  <select id ="selectCategory" resultType ="GoodsDTO" parameterType="_int">
   		select * from goods where category_num = #{categoryNum}
   </select>
 </mapper>

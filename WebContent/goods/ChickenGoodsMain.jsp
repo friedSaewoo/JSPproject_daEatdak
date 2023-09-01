@@ -31,13 +31,12 @@
                     <h2 class="page-name">닭고기</h2>
                 </div>
                 <div class="product-inter">
-                	<p>테스트</p>
                     <ul class="product-list">
                     <c:choose>
-                    	<c:when test = "${not empty chicken }">
-                    		<c:forEach var ="chick" items="${chicken}">
+                    	<c:when test = "${not empty goodsList }">
+                    		<c:forEach var ="goods" items="${goodsList}">
                     	 	<tr>
-                     			<td><c:out value="${chick.getGoodsName()}" /></td>
+                     			<td><c:out value="${goods.getGoodsName()}" /></td>
                      		</tr>
                      		</c:forEach>
                     	 </c:when>

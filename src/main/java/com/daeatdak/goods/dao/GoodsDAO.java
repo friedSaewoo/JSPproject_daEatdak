@@ -14,8 +14,7 @@ public class GoodsDAO {
 	      sqlSession = MyBatisConfig.getSqlSessionFactory().openSession(true);
 	   }
 	   
-	   public List<GoodsDTO> chicken(){
-		   System.out.println(1);
-	      return sqlSession.selectList("goods.chicken");
+	   public List<GoodsDTO> selectCategory(int categoryNum){
+	      return sqlSession.selectList("goods.selectCategory", categoryNum);
 	   }
 }

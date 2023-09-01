@@ -17,16 +17,19 @@ public class GoodsListController implements Execute{
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServerException {
 	      GoodsDAO goodsDAO = new GoodsDAO();
-	      System.out.println("GoodsListController");
-	      request.setAttribute("chicken", goodsDAO.chicken());
-
+	      
+	      int categoryNum = Integer.parseInt(request.getParameter("categoryNum")) ;
+	      
+	      request.setAttribute("goodsList", goodsDAO.selectCategory(categoryNum));	      
+	      
+	      System.out.println("cateNum : " + categoryNum);	      	      
 	      try {
 			request.getRequestDispatcher("/goods/ChickenGoodsMain.jsp").forward(request, response);
 		} catch (ServletException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 		return null;

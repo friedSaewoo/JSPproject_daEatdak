@@ -1,5 +1,4 @@
 CREATE database jsp_daEatdak;
-drop database jsp_daEatdak;
 
 use jsp_daEatdak;
 

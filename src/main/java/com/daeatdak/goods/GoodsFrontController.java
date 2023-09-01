@@ -33,13 +33,10 @@ public class GoodsFrontController extends HttpServlet {
 
 	   protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		      String target = request.getRequestURI().substring(request.getContextPath().length());
-		      System.out.println(target);
 		      Result result = null;
-		      
-
+		     
 		      switch(target) {
-		      case "/goods/Chicken.go":
-		    	  System.out.println("치킨골랐다");
+		      case "/goods/goodsList.go":
 		    	  new GoodsListController().execute(request, response);
 		         break;
 		         
