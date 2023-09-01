@@ -29,7 +29,6 @@ public class GoodsListController implements Execute{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	      System.out.println("BoardListOkController1");
 		return null;
 	}
 

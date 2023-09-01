@@ -76,16 +76,18 @@
                 <nav>
                     <ul>
                         <li>
-                        	<form action ="goods/Chicken.go" >
-                        		<button><h4>닭고기</h4></button>
-                        	</form>
-                        </li>
-                        <li><h4>|</h4></li>
-                        <li><a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
-                        <li><h4>|</h4></li>
-                        <li><a href="${pageContext.request.contextPath}/goods/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
-                        <li><h4>|</h4></li>
-                        <li><a href="${pageContext.request.contextPath}/goods/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
+                        	<form action ="goods/goodsList.go" method="post">
+                        		<input type="hidden" name="categoryNum" value="1">
+                        		<button><h4>닭고기</h4></button> 	
+                        	</li>
+                        	<li><h4>|</h4></li>
+                        	<li><a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp"><h4>돼지고기</h4></a></li>
+                        	<li><h4>|</h4></li>
+                        	<li><a href="${pageContext.request.contextPath}/goods/CowGoodsMain.jsp"><h4>소고기</h4></a></li>
+                        	<li><h4>|</h4></li>
+                        	<li><a href="${pageContext.request.contextPath}/goods/CFGoodsMain.jsp"><h4>간편식 &dot; 음료</h4></a></li>
+                        
+                        </form>
                     </ul>
                 </nav>
             </div>
