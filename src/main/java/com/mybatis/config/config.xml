@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
 <configuration>
 	<settings>
 		<setting name="mapUnderscoreToCamelCase" value="true"/>
@@ -8,6 +9,8 @@
 	<!-- DTO 추가 -->
    <typeAliases>
       <typeAlias type="com.daeatdak.user.dto.UserDTO" alias = "UserDTO"/>
+            <typeAlias type="com.daeatdak.admin.dto.AdminDTO" alias = "AdminDTO"/>
+      
    </typeAliases>
 
 
@@ -26,6 +29,8 @@
    <!-- Mapper 추가 -->
    <mappers>
          <mapper resource = "com/mybatis/mapper/MemberMapper.xml"></mapper>
+                  <mapper resource = "com/mybatis/mapper/AdminMapper.xml"></mapper>
+         
    </mappers>
    
 </configuration>

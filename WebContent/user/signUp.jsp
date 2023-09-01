@@ -53,7 +53,7 @@
                             
                         <div class="input-text">    
                             <input type="text" id="email" name="userEmail" placeholder="이메일 입력" maxlength="100" >
-                            <h2 class="checkId-result"></h2>  
+                            <div class="checkId-result"></div>  
                             <input type="text" name ="userName" id="name"  placeholder="이름 입력" maxlength="100" >
                                                  
                             <input type="password" name ="userPassword" id="pw"  placeholder="비밀번호 입력" maxlength="100" >

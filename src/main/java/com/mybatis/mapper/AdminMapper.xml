@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="admin">
+	
+   <insert id = "GoodsRegist" parameterType="AdminDTO">
+         insert into goods(goods_name,  goods_price,  goods_quantity, goods_category)
+         value(#{goodsName}, #{goodsPrice}, #{goodsQuantity}, #{goodsCategory})
+   </insert>
+   
+   <insert id="GoodsImg" parameterType="AdminDTO">
+ 		insert into image(goods_img , goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5 )  	
+ 		value (#{goodsImg}, #{goodsDetailImg1}, #{goodsDetailImg2}, #{goodsDetailImg3}, #{goodsDetailImg4}, #{goodsDetailImg5})	
+ 
+   </insert>
+   
+  
+	
+   
+     
+</mapper>

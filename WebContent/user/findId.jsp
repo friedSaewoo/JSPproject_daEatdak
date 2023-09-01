@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,22 +43,24 @@
                     <div class="idfind-greeting">
                         <strong class="txt">아이디 찾기</strong>
                     </div>
-                    <form id="findid_form" name="findid_form" action="" method="post" >
+                    <form id="findid_form" name="findid_form" action="/user/findUserEmail.me" method="post" >
                         <div class="input-group">
-                        <div class="input-text">
-                            <input type="text" placeholder="이름 입력" maxlength="100" >
-                            <input type="text" placeholder="이메일 입력" maxlength="100" >
-                            </div>                           
+	                        <div class="input-text">
+	                            <input type="text" placeholder="이름 입력" maxlength="100" name="userName">
+	                            <input type="text" placeholder="휴대폰 번호 입력" maxlength="100" name="userPhone">
+	                        </div>                           
                         </div>
                         <div class="button-submit">
                             <button>확인</button>                       
                         </div>
+                   </form>
+                        
                         <div class="login-back">
                             <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/login.jsp' ">로그인 창으로 돌아가기</button>
                         </div>
-                        <h2 id="txt">회원 아이디 출력 영역</h2>
+                        <%=request.getAttribute("findUserEmail") %>
+                       	
                         </div>
-                    </form>
                 </div>
 					
 					

@@ -287,7 +287,9 @@
                     </div>
 
                     <div class="memberInfo_search">
-                        <button onclick="location.href='adminProductRegist.jsp'">상품등록버튼</button>
+                    <form action="/admin/goodsRegist.ad">
+                        <button >상품등록버튼</button>
+                       </form>
                     </div><br>
 
                     <div class="pageing" style="margin: 15px auto;">

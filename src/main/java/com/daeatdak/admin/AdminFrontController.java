@@ -7,10 +7,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.daeatdak.Result;
+import com.daeatdak.user.JoinOkController;
+
 /**
  * Servlet implementation class AdminFrontController
  */
-@WebServlet("/AdminFrontController")
+//@WebServlet("/AdminFrontController")
 public class AdminFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -26,16 +29,47 @@ public class AdminFrontController extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
+
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doProcess(request, response);
+
 		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 
+	
+	protected void doProcess(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String target = request.getRequestURI().substring(request.getContextPath().length());
+		System.out.println(target);
+		Result result = null;	
+		
+		
+		switch(target) {
+		case "/admin/goodsRegist.ad":
+			request.getRequestDispatcher("/admin/adminProductRegist.jsp").forward(request, response);
+			break;
+		
+		case "/admin/goodsRegistOk.ad":
+			System.out.println("등록완료");
+			result = new GoodsRegistOkController().execute(request, response);
+			break;
+		
+		}
+		
+		if (result != null) {
+			if (result.isRedirect()) {
+				response.sendRedirect(result.getPath());
+			} else {
+				request.getRequestDispatcher(result.getPath()).forward(request, response);
+			}
+		}
+	}
+	
 }

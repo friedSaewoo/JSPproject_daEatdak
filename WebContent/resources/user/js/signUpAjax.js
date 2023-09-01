@@ -1,30 +1,31 @@
 /**
  * 
  */
- $('#email').on('change', function() {
-		let id = $(this).val();
+$('#email').on('change', function() {
+	let id = $(this).val();
+	$('.checkId-result').text("");
 
-		console.log(this);
-		console.log(id);
+	console.log(this);
+	console.log(id);
 
-		$.ajax({
+	$.ajax({
 
-			url : "checkIdOk.me",
-			type : "get",
-			data : {
-				"id" : id
-			},
-			success : function(result) {
-				if(result==0){
-					$('.sign-btn').attr("disabled", false);
+		url: "checkIdOk.me",
+		type: "get",
+		data: {
+			"id": id
+		},
+		success: function(result) {
+			if (result == 0) {
+				$('.sign-btn').attr("disabled", false);
 
-				}else if(result==1){
-					$('.checkId-result').text('이미 존재하는 이메일입니다.');
-					$('.sign-btn').attr("disabled", true);
+			} else if (result == 1) {
+				$('.checkId-result').text('이미 존재하는 이메일입니다.');
+				$('.sign-btn').attr("disabled", true);
 
 
-				}
 			}
-			
+		}
+
 	})
 });	
