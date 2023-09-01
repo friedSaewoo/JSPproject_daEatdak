@@ -7,7 +7,7 @@
 	
 	<!-- DTO 추가 -->
    <typeAliases>
-      <typeAlias type="com.example.app.dto.MemberDTO" alias = "MemberDTO"/>
+      <typeAlias type="com.daeatdak.common.vo.CommonVO" alias="CommonVO"/>
    </typeAliases>
 
 
@@ -25,6 +25,7 @@
    
    <!-- Mapper 추가 -->
    <mappers>
+         <mapper resource = "com/mybatis/mapper/CommonMapper.xml"></mapper>
          <mapper resource = "com/mybatis/mapper/MemberMapper.xml"></mapper>
    </mappers>
    
