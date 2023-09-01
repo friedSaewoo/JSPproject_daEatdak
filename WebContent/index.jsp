@@ -97,12 +97,13 @@
                         <li>
                             <a href="#">
                                 <div class="zoom-container">
-                                    <!-- 이미지 없음 -->
+                                  <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
                                 </div>
-                                <p><span>${goods.getGoodsName()}</span></p>
+                                <p><span>다있닭</span>${goods.getGoodsName()}</p>
                                 <p>${goods.goodsPrice}원</p>
                             </a>
                         </li>
+                        
                     </c:if>
                 </c:forEach>
             </c:when>
@@ -190,11 +191,12 @@
                         '<div class="zoom-container">' +
                         '<!-- 이미지 없음 -->' +
                         '</div>' +
-                        '<p><span>' + goods.goods_name + '</span></p>' +
+                        '<p><span>다있닭</span> ' + goods.goods_name + '</p>' +
                         '<p>' + goods.goods_price + '원</p>' +
                         '</a>' +
                         '</li>'
                     );
+                    content.trigger( "create") ;
                 });
             }
         });
