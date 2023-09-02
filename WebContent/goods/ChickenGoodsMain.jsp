@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/common/css/common.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/common/img/logoPic.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/goods/css/ChickenAllMain.css" type="text/css"/>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/goods/css/ChickenAllMain.css?ver=2.1" type="text/css"/>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/goods/js/pageing.js" defer></script>
+<script src="${pageContext.request.contextPath}/resources/goods/js/pageing.js?ver=2" defer></script>
 <title>다잇닭</title>
 </head>
 <body>
@@ -92,6 +92,7 @@
                             </div>
                         </li>
                         </c:forEach>
+                        </ul>
                    <!--
                         <li class="list-info">
                             <div class="list">
@@ -131,11 +132,10 @@
                         </li>
 
                           -->
-                    </ul>
+
                     <div class="pageing">
                         <div class="arrow prev" onclick="">&lt;</div>
                         <ul class="page-box">
-                         
                         </ul>
                         <div class="arrow next">&gt;</div>
                     </div>
