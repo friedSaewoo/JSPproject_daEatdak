@@ -52,6 +52,17 @@
     color: rgb(182, 124, 37);
 
 }
+.horizontal-list {
+    display: flex;
+    flex-wrap: nowrap; /* 요소들이 넘칠 때 줄바꿈을 방지합니다. */
+    overflow-x: auto; /* 가로 스크롤을 추가합니다. */
+}
+
+.horizontal-list li {
+    flex: 0 0 auto; /* 요소 크기를 자동으로 유지하고 넘치는 경우 스크롤바를 표시합니다. */
+    margin-right: 20px; /* 각 아이템 사이의 간격을 조절합니다. */
+}
+
 .banner-section ul {
     
     width: 3072px;

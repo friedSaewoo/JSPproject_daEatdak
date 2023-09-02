@@ -48,9 +48,9 @@
                     <!-- 매인 배너 섹션 -->
                     <div class="banner-section">
                         <ul>
-                            <li><img src="./resources/common/img/mainbanner3.jpg" alt="매인베너" /></li>
-                            <li><img src="./resources/common/img/mainBanner1.jpg" alt="매인베너" /></li>
-                            <li><img src="./resources/common/img/mainbanner2.jpg" alt="매인베너" /></li>
+                            <li><img src="${pageContext.request.contextPath}/resources/common/img/mainbanner3.jpg" alt="매인베너" /></li>
+                            <li><img src="${pageContext.request.contextPath}/resources/common/img/mainBanner1.jpg" alt="매인베너" /></li>
+                            <li><img src="${pageContext.request.contextPath}/resources/common/img/mainbanner2.jpg" alt="매인베너" /></li>
                         </ul>
                        
                     </div>
@@ -79,7 +79,86 @@
                                 </ul>
                             </div>
                         </div>
-                        
+                        <!-- 카테고리별 상품들 -->
+                        <div class="goods-contents">
+                            <div class="panel" id="panel1">
+                                <ul>
+                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">
+                                        <div class="goods-zoom-container">
+                                        <img src="${pageContext.request.contextPath}/resources/common/img/닭고기/chicken.jpg" alt="닭메뉴1"/>
+                                        </div>
+                                            <h5>다잇닭</h5>
+                                            <h6>훈제 닭가슴살 100g</h6>
+                                            <p>17,900원</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="move-to-menu-button-section">
+                                    <a href="${pageContext.request.contextPath}/goods/ChickenGoodsMain.jsp">
+                                        <h6>닭고기 전체보기</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel" id="panel2">
+                                <ul>
+                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">                                    
+                                            <div class="goods-zoom-container">
+                                                <img src="${pageContext.request.contextPath}/resources/common/img/돼지고기/저지방 한돈 소세지 피자 100g.jpg" alt="돼지고기2"/>
+                                            </div>
+                                            <h5>다잇돈</h5>
+                                            <h6>저지방 한돈 소세지 피자 100g</h6>
+                                            <p>19,900원</p>
+                                        </a>
+                                    </li>                                 
+                                </ul>
+                                <div class="move-to-menu-button-section">
+                                    <a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp">
+                                        <h6>돼지고기 전체보기</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel" id="panel3">
+                                <ul>
+                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">
+                                        <div class="goods-zoom-container">
+                                        <img src="${pageContext.request.contextPath}/resources/common/img/소고기/미트볼 고추 100g.jpg" alt="소고기1"/>
+                                        </div>
+                                            <h5>다잇소</h5>
+                                            <h6>미트볼 고추맛 100g</h6>
+                                            <p>16,900원</p>
+                                        </a>
+                                    </li>                                   
+                                </ul>
+                                <div class="move-to-menu-button-section">
+                                    <a href="${pageContext.request.contextPath}/goods/CowGoodsMain.jsp">
+                                        <h6>소고기 전체보기</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="panel" id="panel4">
+                                <ul>
+                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">
+                                        <div class="goods-zoom-container">
+                                        <img src="${pageContext.request.contextPath}/resources/common/img/간편식/한끼 쉐이크 견과 300g.jpg" alt="간편식1"/>
+                                        </div>
+                                            <h5>다잇닷</h5>
+                                            <h6>한끼 쉐이크 견과 300g</h6>
+                                            <p>15,900원</p>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                <div class="move-to-menu-button-section">
+                                    <a href="${pageContext.request.contextPath}/goods/CFGoodsMain.jsp">
+                                        <h6>간편식 전체보기</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+               
+                </div>
 
                 <!-- 신상품 영역 -->
                 <div class="recently-goods-container">
@@ -90,31 +169,31 @@
 
                 <!-- 신상품 -->
                 <div class="recently-goods-contents">
-                    <c:choose>
-            <c:when test="${not empty goodsList}">
+    <c:choose>
+        <c:when test="${not empty goodsList}">
+            <ul class="horizontal-list">
                 <c:forEach items="${goodsList}" var="goods" varStatus="loop">
-                    <c:if test="${loop.index < 5}">
+                    <c:if test="${loop.index < 10}">          
                         <li>
                             <a href="#">
                                 <div class="zoom-container">
-                                  <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
                                 </div>
-                                <p><span>다있닭</span>${goods.getGoodsName()}</p>
+                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
                                 <p>${goods.goodsPrice}원</p>
                             </a>
                         </li>
-                        
                     </c:if>
                 </c:forEach>
-            </c:when>
-            <c:otherwise>
-                <li>
-                    <p>판매량이 높은 상품이 없습니다.</p>
-                </li>
-            </c:otherwise>
-        </c:choose>
-    </ul>
-                </div>
+            </ul>
+        </c:when>
+        <c:otherwise>
+            <li>
+                <p>판매량이 높은 상품이 없습니다.</p>
+            </li>
+        </c:otherwise>
+    </c:choose>
+</div>
                   <!-- 화살표-좌우슬라이드 -->
                 </div>
                 <button class="recently-section-button recently-left-button"><span class="material-symbols-outlined">
@@ -133,7 +212,7 @@
                 <h3><span>다잇닭</span>을 더 재미있게 즐길 수 있는 방법! </h3>
                 <div class="media-taps">
                     <div class="media-tap">
-                        <video src="./resources/common/img/media1.mp4" controls muted>
+                        <video src="${pageContext.request.contextPath}/resources/common/img/media1.mp4" controls muted>
                         </video>
                     </div>
 
@@ -144,7 +223,7 @@
                             <dt>이것들을 준비해주세요!</dt>
                             <dd>
                                 <div class="media-img-container">
-                                    <img src="./resources/common/img/닭고기/chicken.jpg" alt="재료1"/>
+                                    <img src="${pageContext.request.contextPath}/resources/common/img/닭고기/chicken.jpg" alt="재료1"/>
                                 </div>
                                 <div class="material-detail">
                                     <p>다잇닭</p>
@@ -186,6 +265,7 @@
                 // 가져온 데이터를 동적으로 리스트에 추가
                 $.each(data, function (index, goods) {
                     $topSellingGoodsList.append(
+                    		'<ul>' +
                         '<li>' +
                         '<a href="#">' +
                         '<div class="zoom-container">' +
@@ -194,7 +274,9 @@
                         '<p><span>다있닭</span> ' + goods.goods_name + '</p>' +
                         '<p>' + goods.goods_price + '원</p>' +
                         '</a>' +
-                        '</li>'
+                        '</li>' +
+                        '</ul>'
+                        
                     );
                     content.trigger( "create") ;
                 });
