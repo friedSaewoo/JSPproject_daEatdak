@@ -82,53 +82,87 @@
                         <!-- 카테고리별 상품들 -->
                         <div class="goods-contents">
                             <div class="panel" id="panel1">
-                                <ul>
-                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">
-                                        <div class="goods-zoom-container">
-                                        <img src="${pageContext.request.contextPath}/resources/common/img/닭고기/chicken.jpg" alt="닭메뉴1"/>
-                                        </div>
-                                            <h5>다잇닭</h5>
-                                            <h6>훈제 닭가슴살 100g</h6>
-                                            <p>17,900원</p>
-                                        </a>
-                                    </li>
-                                </ul>
+                               
+                                    <c:choose>
+        <c:when test="${not empty category1}">
+            <ul class="horizontal-list">
+                <c:forEach items="${category1}" var="goods" varStatus="loop">
+                    <c:if test="${loop.index < 10}">          
+                        <li>
+                            <a href="#">
+                                <div class="zoom-container">
+                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                </div>
+                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <p>${goods.goodsPrice}원</p>
+                            </a>
+                        </li>
+                    </c:if>
+                </c:forEach>
+            </ul>
+        </c:when>
+        </c:choose>
+                               
                                 <div class="move-to-menu-button-section">
                                     <a href="${pageContext.request.contextPath}/goods/ChickenGoodsMain.jsp">
                                         <h6>닭고기 전체보기</h6>
                                     </a>
                                 </div>
                             </div>
+                            
+                            
+                            
                             <div class="panel" id="panel2">
-                                <ul>
-                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">                                    
-                                            <div class="goods-zoom-container">
-                                                <img src="${pageContext.request.contextPath}/resources/common/img/돼지고기/저지방 한돈 소세지 피자 100g.jpg" alt="돼지고기2"/>
-                                            </div>
-                                            <h5>다잇돈</h5>
-                                            <h6>저지방 한돈 소세지 피자 100g</h6>
-                                            <p>19,900원</p>
-                                        </a>
-                                    </li>                                 
-                                </ul>
+                                <c:choose>
+        <c:when test="${not empty category2}">
+            <ul class="horizontal-list">
+                <c:forEach items="${category2}" var="goods" varStatus="loop">
+                    <c:if test="${loop.index < 10}">          
+                        <li>
+                            <a href="#">
+                                <div class="zoom-container">
+                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                </div>
+                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <p>${goods.goodsPrice}원</p>
+                            </a>
+                        </li>
+                    </c:if>
+                </c:forEach>
+            </ul>
+        </c:when>
+        </c:choose>
                                 <div class="move-to-menu-button-section">
                                     <a href="${pageContext.request.contextPath}/goods/PigGoodsMain.jsp">
                                         <h6>돼지고기 전체보기</h6>
                                     </a>
                                 </div>
                             </div>
+                            
+                            
+                            
+                            
+                            
                             <div class="panel" id="panel3">
-                                <ul>
-                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">
-                                        <div class="goods-zoom-container">
-                                        <img src="${pageContext.request.contextPath}/resources/common/img/소고기/미트볼 고추 100g.jpg" alt="소고기1"/>
-                                        </div>
-                                            <h5>다잇소</h5>
-                                            <h6>미트볼 고추맛 100g</h6>
-                                            <p>16,900원</p>
-                                        </a>
-                                    </li>                                   
-                                </ul>
+                                <c:choose>
+        <c:when test="${not empty category3}">
+            <ul class="horizontal-list">
+                <c:forEach items="${category3}" var="goods" varStatus="loop">
+                    <c:if test="${loop.index < 10}">          
+                        <li>
+                            <a href="#">
+                                <div class="zoom-container">
+                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                </div>
+                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <p>${goods.goodsPrice}원</p>
+                            </a>
+                        </li>
+                    </c:if>
+                </c:forEach>
+            </ul>
+        </c:when>
+        </c:choose>
                                 <div class="move-to-menu-button-section">
                                     <a href="${pageContext.request.contextPath}/goods/CowGoodsMain.jsp">
                                         <h6>소고기 전체보기</h6>
@@ -136,18 +170,25 @@
                                 </div>
                             </div>
                             <div class="panel" id="panel4">
-                                <ul>
-                                    <li><a href="http://127.0.0.1:5501/common/html/index.html#">
-                                        <div class="goods-zoom-container">
-                                        <img src="${pageContext.request.contextPath}/resources/common/img/간편식/한끼 쉐이크 견과 300g.jpg" alt="간편식1"/>
-                                        </div>
-                                            <h5>다잇닷</h5>
-                                            <h6>한끼 쉐이크 견과 300g</h6>
-                                            <p>15,900원</p>
-                                        </a>
-                                    </li>
-                                    
-                                </ul>
+                                <c:choose>
+        <c:when test="${not empty category4}">
+            <ul class="horizontal-list">
+                <c:forEach items="${category4}" var="goods" varStatus="loop">
+                    <c:if test="${loop.index < 10}">          
+                        <li>
+                            <a href="#">
+                                <div class="zoom-container">
+                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                </div>
+                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <p>${goods.goodsPrice}원</p>
+                            </a>
+                        </li>
+                    </c:if>
+                </c:forEach>
+            </ul>
+        </c:when>
+        </c:choose>
                                 <div class="move-to-menu-button-section">
                                     <a href="${pageContext.request.contextPath}/goods/CFGoodsMain.jsp">
                                         <h6>간편식 전체보기</h6>
@@ -283,6 +324,11 @@
             }
         });
     });
+    
+    
+    
+    
+    
 </script>
 
 </html>

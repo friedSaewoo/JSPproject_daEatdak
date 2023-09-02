@@ -20,5 +20,23 @@ public class CommonDAO {
 		// TODO Auto-generated method stub
 		return sqlSession.selectList("common.selectAll");
 	}
+	
+	public List<CommonVO> selectAll1() {
+		// TODO Auto-generated method stub
+		return sqlSession.selectList("common.selectAll1");
+	}
+	
+	public List<CommonVO> selectAll2() {
+		// TODO Auto-generated method stub
+		return sqlSession.selectList("common.selectAll2");
+	}
+	public List<CommonVO> selectAll3() {
+		// TODO Auto-generated method stub
+		return sqlSession.selectList("common.selectAll3");
+	}
+	public List<CommonVO> selectAll4() {
+		// TODO Auto-generated method stub
+		return sqlSession.selectList("common.selectAll4");
+	}
 
 }
