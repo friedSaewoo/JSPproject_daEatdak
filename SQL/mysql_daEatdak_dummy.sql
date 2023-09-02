@@ -69,14 +69,26 @@ INSERT INTO goods (category_num, goods_name, goods_price, goods_quantity, sale_c
 (4, 'Product 4-9', 14, 85, 0),
 (4, 'Product 4-10', 28, 55, 0);
 
-SELECT * FROM goods WHERE category_num =1;
+SELECT * FROM goods;
+
+insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
+			value(1,'resources/goods/img/Chicken/1/1.png','WebContent/resources/goods/img/Chicken/1/2.png',null,null,null,null);
+
+insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
+			value(11,'resources/goods/img/Pig/1/1.png','WebContent/resources/goods/img/Pig/1/2.png',null,null,null,null);
+		
+insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
+			value(21,'resources/goods/img/Cow/1/1.png','WebContent/resources/goods/img/Cow/1/2.png',null,null,null,null);	
+		
+insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
+			value(31,'resources/goods/img/CF/1/1.png','WebContent/resources/goods/img/CF/1/2.png',null,null,null,null);	
+		
+select * from image;
 
 
+select * from goods where category_num = 1;
 
-
-
-
-
+drop table image;
 
 
 

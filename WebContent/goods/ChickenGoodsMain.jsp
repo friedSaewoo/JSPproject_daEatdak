@@ -28,43 +28,71 @@
 	 <main class="container">
             <div class="product-chicken-page">
                 <div class="page-top">
-                    <h2 class="page-name">닭고기</h2>
+                <!-- 카테고리별 page-name 출력-->
+                <c:choose >
+                	<c:when test="${goodsList[0].getCategoryNum() == 1 }" >
+                   		<h2 class="page-name">닭고기</h2>
+                   	</c:when>
+					<c:when test="${goodsList[0].getCategoryNum() == 2 }" >
+                   		<h2 class="page-name">돼지고기</h2>
+                   	</c:when>
+                   	<c:when test="${goodsList[0].getCategoryNum() == 3 }" >
+                   		<h2 class="page-name">소고기</h2>
+                   	</c:when>
+                   	<c:when test="${goodsList[0].getCategoryNum() == 4 }" >
+                   		<h2 class="page-name">간편식&dot;음료</h2>
+                   	</c:when>
+                </c:choose>
                 </div>
                 <div class="product-inter">
                     <ul class="product-list">
-                    <c:choose>
-                    	<c:when test = "${not empty goodsList }">
-                    		<c:forEach var ="goods" items="${goodsList}">
-                    	 	<tr>
-                     			<td><c:out value="${goods.getGoodsName()}" /></td>
-                     		</tr>
-                     		</c:forEach>
-                    	 </c:when>
-                    	 <c:otherwise>
-                    	 	<tr>
-                    	 		<td colspan ="5" align ="center">등록된 상품이 없습니다.</td>
-                    	 	</tr>
-                    	 </c:otherwise>
-                   	</c:choose>
-                    <!--
-                        <li class="list-info">
+						<c:forEach var ="goods" items ="${goodsList}"> 
+                        <li class="list-info">             
+                        	<c:set var ="imagePath" value=""/>
+                        	<c:forEach var = "image" items ="${goodsImages }">
+                        		<c:if test="${image.getGoodsNum()==goods.getGoodsNum()}">
+                        			<c:set var ="imagePath" value ="${image.getGoodsImg() }"/>
+                        		</c:if>
+                        	</c:forEach>
+                        	
+                        	<c:if test ="${empty imagePath}">
+                        		<c:set var="imagePath" value="resources/goods/img/Default.png"/>
+                        	</c:if>
+                        	
                             <div class="list">
                             	<form action="" method="get">
                                 <figure class="img">
                                     <a href="${pageContext.request.contextPath}/goods/GoodsBuyPage.jsp">
-                                        <img class="chicken" src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="상품이미지">
+                                        <img class="chicken" src="${pageContext.request.contextPath}/${imagePath}" alt="상품이미지">
+                                        <td><c:out value="${imagePath }"/></td>
                                     </a>
                                 </figure>
                                 </form>
                                 <div class="list-name-top">
-                                    <span>다있닭</span> 
+                                	<c:choose >
+                						<c:when test="${goodsList[0].getCategoryNum() == 1 }" >
+                   							  <span>다있닭</span> 
+                   						</c:when>
+										<c:when test="${goodsList[0].getCategoryNum() == 2 }" >
+                   							  <span>다있돈</span> 
+                 					  	</c:when>
+                  					 	<c:when test="${goodsList[0].getCategoryNum() == 3 }" >
+                   							  <span>다있소</span> 
+                  					 	</c:when>
+                 					  	<c:when test="${goodsList[0].getCategoryNum() == 4 }" >
+                   							  <span>다있닷</span> 
+                  					 	</c:when>
+               						 </c:choose>
+
                                 </div>
                                 <div class="list-name-bottom">
-                                    닭가슴살 스테이크 오리지널 100g
+                                    ${goods.getGoodsName()}
                                 </div>
-                                <span class="list-price">17,900원</span>
+                                <span class="list-price">${goods.getGoodsPrice()} 원</span>
                             </div>
                         </li>
+                        </c:forEach>
+                   <!--
                         <li class="list-info">
                             <div class="list">
                                <form action="" method="get">

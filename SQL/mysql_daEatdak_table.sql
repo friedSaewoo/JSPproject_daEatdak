@@ -1,4 +1,4 @@
-CREATE database jsp_daEatdak;
+
 
 use jsp_daEatdak;
 
@@ -47,12 +47,12 @@ CREATE TABLE goods (
 CREATE TABLE image (
 	image_num int auto_increment primary key,
     goods_num INT unsigned NOT NULL,
-    goods_img BLOB NOT NULL,
-    goods_detail_img1 BLOB NOT NULL,
-    goods_detail_img2 BLOB,
-    goods_detail_img3 BLOB,
-    goods_detail_img4 BLOB,
-    goods_detail_img5 BLOB,
+    goods_img varchar(255) NOT NULL,
+    goods_detail_img1 varchar(255) NOT NULL,
+    goods_detail_img2 varchar(255),
+    goods_detail_img3 varchar(255),
+    goods_detail_img4 varchar(255),
+    goods_detail_img5 varchar(255),
     foreign key (goods_num) references goods (goods_num)
 );
 

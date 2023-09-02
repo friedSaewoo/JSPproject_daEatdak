@@ -8,6 +8,7 @@
 	<!-- DTO 추가 -->
    <typeAliases>
       <typeAlias type="com.daeatdak.goods.dto.GoodsDTO" alias = "GoodsDTO"/>
+      <typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
    </typeAliases>
 
 
