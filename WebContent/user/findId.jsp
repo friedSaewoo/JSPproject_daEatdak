@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +9,7 @@
 <!--기본적인 공통 css-->
 <!--이외 각자 페이지 css/js는 각자 추가할 것-->
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/common/css/common.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/member/css/login.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/member/css/findId.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/common/img/logoPic.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -36,35 +38,30 @@
 		<div class='main'>
 				<main>
 					<!--개인 페이지 작업영역-->
-					<div class="login-container">
-                <div class="login-area">
-                    <div class="login-greeting">
-                        <strong class="txt">안녕하세요 : ) <br> 다잇닭 입니다</strong>
+					<div class="idfind-container">
+                <div class="idfind-area">
+                    <div class="idfind-greeting">
+                        <strong class="txt">아이디 찾기</strong>
                     </div>
-                    <form id="login_form" name="login_form" action="" method="post" >
+                    <form id="findid_form" name="findid_form" action="/user/findUserEmail.me" method="post" >
                         <div class="input-group">
-                        <div class="input-text">
-                            <input type="text" placeholder="아이디" maxlength="100" >
-                            <input type="password" placeholder="비밀번호" maxlength="100" >
-                            </div>                           
+	                        <div class="input-text">
+	                            <input type="text" placeholder="이름 입력" maxlength="100" name="userName">
+	                            <input type="text" placeholder="휴대폰 번호 입력" maxlength="100" name="userPhone">
+	                        </div>                           
                         </div>
-                        <div class="button-login">
-                            <button>로그인</button>                       
+                        <div class="button-submit">
+                            <button>확인</button>                       
                         </div>
-                        <div class="button-found">
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/findPw.jsp' ">비밀번호 찾기</button>
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/findId.jsp'  ">아이디 찾기</button>
+                   </form>
+                        
+                        <div class="login-back">
+                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/login.jsp' ">로그인 창으로 돌아가기</button>
                         </div>
-                        <div class="button-kakaologin">
-                            <button type="button" onclick="location.href='/login/html/kakaologin.html' "><img src="${pageContext.request.contextPath}/resources/member/img/kakao_login.png" alt=""></button>
+                        <%=request.getAttribute("findUserEmail") %>
+                       	
                         </div>
-                        <div class="button-signup">
-                            <button type="button" onclick="location.href='${pageContext.request.contextPath}/member/signupSelect.jsp' ">회원가입</button>  
-                        </div>
-                    </form>
                 </div>
-            
-            </div>
 					
 					
 					
