@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,11 +41,16 @@
                 <div class="password-check-box">
                     <div class="password-check-box-inner">
                         <b>비밀번호를 입력하세요.</b>
-                        <input class="content-password" type="password" id="inputPassword" maxlength="4">
-                        <div class="inner-btnBox">
-                            <button class="btn cancle" onclick="history.go(-1)">취소</button>
-                            <button class="btn admit" onclick="checkPassword()">확인</button>
-                        </div>
+                        <form action= "/board/boardPasswordCheckConfigOk.bo" method="post">
+                        	
+                        	<input type="hidden" name="boardNum" value="${board.getBoardNum()}" />
+	                        <input class="content-password" type="password" id="inputPassword" maxlength="4" name="boardPassword"/>
+	                        <div class="inner-btnBox">
+	                            <button class="btn cancle" onclick="history.go(-1)">취소</button>
+	                            <button class="btn admit" type="submit" onclick="checkPassword()">확인</button>
+	                        </div> 
+	                        
+	                    </form>     
                     </div>
                 </div>
             </div>
