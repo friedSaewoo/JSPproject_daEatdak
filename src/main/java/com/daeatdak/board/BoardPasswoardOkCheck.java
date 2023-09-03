@@ -42,8 +42,8 @@ public class BoardPasswoardOkCheck implements Execute{
 		}else if(!boardVO.getBoardPassword().equals(boardPassword)){
 			String warningMessage = "비밀번호가 일치하지 않습니다.";
 			request.setAttribute("warningMessage", warningMessage);
-		
 		}
+		request.getRequestDispatcher("/board/boardListOk.bo").forward(request, response);
 		return null;
 	}
 
