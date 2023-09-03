@@ -2,9 +2,9 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
-	<settings>
-		<setting name="mapUnderscoreToCamelCase" value="true" />
-	</settings>
+   <settings>
+      <setting name="mapUnderscoreToCamelCase" value="true" />
+   </settings>
 
 	<!-- DTO 추가 -->
 	<typeAliases>
@@ -13,7 +13,7 @@
 		<typeAlias type="com.daeatdak.admin.dto.FileDTO" alias="FileDTO"/>
 		<typeAlias type="com.daeatdak.admin.vo.GoodsInfoListVO" alias="GoodsInfoListVO"/>
 		<typeAlias type="com.daeatdak.goods.dto.GoodsDTO" alias = "GoodsDTO"/>
-     	<typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
+     		<typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
 		<typeAlias type="com.daeatdak.board.dto.BoardDTO" alias = "BoardDTO"/>
      	<typeAlias type="com.daeatdak.board.vo.BoardVO" alias = "BoardVO"/>
 	</typeAliases>
