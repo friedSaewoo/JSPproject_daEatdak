@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,259 +30,37 @@
                 <div class="table-div">
                     <div class="totalProdList">
                             <ul class="proUl">
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>001</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>소고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
+                            
+                            <c:choose>
+                            	<c:when test="${not empty GoodsInfoList}">
+                            		<c:forEach var="goodsInfo" items="${GoodsInfoList }">
+                            			
+			                                <li class="productScope">
+			                                    <div class="productList">
+			                                        <div style="width: 10%;"><span><c:out value="${goodsInfo.getGoodsNumber() }"/></span></div>&nbsp;&#124;&nbsp;
+			                                        <div style="width: 20%;" class="ellipsis"><span><c:out value="${goodsInfo.getCategoryName() }"/></span></div>&nbsp;&#124;&nbsp;
+			                                    <div style="width: 20%;" class="ellipsis"><span><c:out value="${goodsInfo.getGoodsName() }"/></span></div>&nbsp;&#124;&nbsp;
+			                                        
+			                                        <div style="width: 10%;"><span><c:out value="${goodsInfo.getGoodsPrice() }"/></span></div>&nbsp;&#124;&nbsp;
+			                                        <div style="width: 10%;"><span><c:out value="${goodsInfo.getGoodsQuantity() }"/></span></div>&nbsp;
+			                                        <div style=" width: 50%">
+			                                            <span><button class="btnUpd del">삭제</button></span>
+			                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
+			                                        </div>
+			                                    </div>
+			                                </li>
+	                                </c:forEach>
+                                </c:when>
+                                <c:otherwise>
+                                	<li>
+                                		<div><span>등록된 물품이 없습니다.</span></div>
+									</li>
+								</c:otherwise>
+							</c:choose>
+                           		
 
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>002</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>돼지고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%" class="upndel">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
 
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>003</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>닭고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>004</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>건강식</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>001</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>소고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
                                 
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>002</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>돼지고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%" class="upndel">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>003</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>닭고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upla">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>004</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>건강식</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>001</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>소고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>002</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>돼지고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%" class="upndel">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>003</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>닭고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>004</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>건강식</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>001</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>소고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>002</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>돼지고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%" class="upndel">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>003</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>닭고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="p	roductList">
-                                        <div style="width: 10%;"><span>004</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>건강식</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>001</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>소고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-                                
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>002</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>돼지고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%" class="upndel">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>003</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>닭고기</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd" onclick="location.href='adminProInfoUp.jsp'">수정</button></span>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="productScope">
-                                    <div class="productList">
-                                        <div style="width: 10%;"><span>004</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 20%;" class="ellipsis"><span>건강식</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>가격</span></div>&nbsp;&#124;&nbsp;
-                                        <div style="width: 10%;"><span>재고</span></div>&nbsp;&nbsp;
-                                        <div style=" width: 50%">
-                                            <span><button class="btnUpd del">삭제</button></span>
-                                            <span><button class="btnUpd upload"><a href="${pageContext.request.contextPath}/admin/adminProInfoUp.jsp">수정</a></button></span>
-                                        </div>
-                                    </div>
-                                </li>
                             </ul>
 
                     </div>

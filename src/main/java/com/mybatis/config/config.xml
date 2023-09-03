@@ -3,34 +3,42 @@
 
 <configuration>
 	<settings>
-		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<setting name="mapUnderscoreToCamelCase" value="true" />
 	</settings>
-	
+
 	<!-- DTO 추가 -->
-   <typeAliases>
-      <typeAlias type="com.daeatdak.user.dto.UserDTO" alias = "UserDTO"/>
-            <typeAlias type="com.daeatdak.admin.dto.AdminDTO" alias = "AdminDTO"/>
-      
-   </typeAliases>
+	<typeAliases>
+		<typeAlias type="com.daeatdak.user.dto.UserDTO"
+			alias="UserDTO" />
+		<typeAlias type="com.daeatdak.admin.dto.AdminDTO"
+			alias="AdminDTO" />
+		<typeAlias type="com.daeatdak.admin.dto.FileDTO" alias="FileDTO"/>
+		<typeAlias type="com.daeatdak.admin.vo.GoodsInfoListVO" alias="GoodsInfoListVO"/>
+			
+
+	</typeAliases>
 
 
-   <environments default="mysql">
-      <environment id="mysql">
-         <transactionManager type="JDBC"/>
-         <dataSource type="POOLED">
-            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="url" value="jdbc:mysql://localhost:3306/jsp_daEatdak"/>
-            <property name="username" value="root"/>
-            <property name="password" value="1111"/>
-         </dataSource>
-      </environment>
-   </environments>
-   
-   <!-- Mapper 추가 -->
-   <mappers>
-         <mapper resource = "com/mybatis/mapper/MemberMapper.xml"></mapper>
-                  <mapper resource = "com/mybatis/mapper/AdminMapper.xml"></mapper>
-         
-   </mappers>
-   
+	<environments default="mysql">
+		<environment id="mysql">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.cj.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://localhost:3306/jsp_daEatdak" />
+				<property name="username" value="root" />
+				<property name="password" value="1111" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<!-- Mapper 추가 -->
+	<mappers>
+		<mapper resource="com/mybatis/mapper/MemberMapper.xml"></mapper>
+		<mapper resource="com/mybatis/mapper/AdminMapper.xml"></mapper>
+		<mapper resource="com/mybatis/mapper/FileMapper.xml" ></mapper>
+		
+
+	</mappers>
+
 </configuration>

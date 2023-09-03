@@ -59,6 +59,26 @@ public class AdminFrontController extends HttpServlet {
 		case "/admin/goodsRegistOk.ad":
 			System.out.println("등록완료");
 			result = new GoodsRegistOkController().execute(request, response);
+			request.getRequestDispatcher("/admin/goodsInfoList.ad").forward(request, response);
+
+			break;
+			
+			
+			
+		case "/admin/goodsInfoList.ad":
+			new GoodsInfoListOkController().execute(request, response);
+
+			request.getRequestDispatcher("/admin/adminProductInfo.jsp").forward(request, response);
+			break;
+			
+		case "/admin/goodsModify.ad":
+			System.out.println("수정하기 페이지");
+			request.getRequestDispatcher("/admin/adminProductRegist.jsp").forward(request, response);
+
+			break;
+			
+		case "/admin/goodsModifyOk.ad":
+			System.out.println("수정완료");
 			break;
 		
 		}

@@ -22,11 +22,11 @@ public class FindUserEmailController implements Execute  {
 		
 //		request.setAttribute("findUserEmail", userDAO.findUserEmailByName(userDTO));
 
-		System.out.println(userDAO.findUserEmailByName(userDTO));
+		System.out.println(userDAO.findUserEmailByName(userDTO)+"ㅇㅇ");
 	
 		
 		request.setAttribute("findUserEmail", userDAO.findUserEmailByName(userDTO));
-System.out.println("-=============");
+System.out.println("-==========아이디찾기 컨트롤러===");
 		
 		return null;	
 		

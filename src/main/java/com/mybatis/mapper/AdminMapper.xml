@@ -6,8 +6,9 @@
 <mapper namespace="admin">
 	
    <insert id = "GoodsRegist" parameterType="AdminDTO">
-         insert into goods(goods_name,  goods_price,  goods_quantity, goods_category)
-         value(#{goodsName}, #{goodsPrice}, #{goodsQuantity}, #{goodsCategory})
+         insert into goods(category_num, goods_name,  goods_price,  goods_quantity)
+         value( #{goodsCategory},#{goodsName}, #{goodsPrice}, #{goodsQuantity} )
+    
    </insert>
    
    <insert id="GoodsImg" parameterType="AdminDTO">
@@ -15,9 +16,24 @@
  		value (#{goodsImg}, #{goodsDetailImg1}, #{goodsDetailImg2}, #{goodsDetailImg3}, #{goodsDetailImg4}, #{goodsDetailImg5})	
  
    </insert>
-   
+ 
   
-	
+<select id="getSequence" resultType="_int">
+		select LAST_INSERT_ID()
+</select>
+  
+  
+ <!--  <select id="lastId" resultType="_int">
+  	select last_insert_id()
+  </select>
+	 -->
+	 
+	 <select id="GoodsInfoList" resultType="GoodsInfoListVO">
+	 	SELECT g.goods_num, c.category_name, g.goods_name ,g.goods_price, g.goods_quantity
+		FROM goods g
+		JOIN category c ON g.category_num = c.category_num;
+	 
+	 </select>
    
      
 </mapper>

@@ -37,7 +37,7 @@
 					<h2>상품 등록</h2>
 				</div>
 				<hr style="width: 90%;">
-				<form action="/admin/goodsRegistOk.ad">
+				<form action="/admin/goodsRegistOk.ad" method="post"  enctype="multipart/form-data">
 				<div class="Rege">
 				
 					<div class="totalProdList">
@@ -45,9 +45,9 @@
 						
 							<div style="width: 350px; height: 350px;">
 								<div id=image_container></div>
-								<input type="file" id="image" accept="image/*"
+								<input type="file" id="image" accept="image/*" accept=".jpg, .jpeg, .png" multiple 
 									onchange="setThumbnail(event);" style="width: 180px;" name="goodsMainImg"/>
-								<button class="imgDel">삭제</button>
+								<button type="button" class="imgDel">삭제</button>
 							</div>
 
 							<div style="width: 60%; margin-left: 10px;">

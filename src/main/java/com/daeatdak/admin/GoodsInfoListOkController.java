@@ -8,23 +8,27 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.daeatdak.Execute;
 import com.daeatdak.Result;
-import com.daeatdak.admin.dao.ImageDAO;
-import com.daeatdak.admin.dto.ImageDTO;
+import com.daeatdak.admin.dao.AdminDAO;
 
-public class ImageInsertOkController implements Execute {
+public class GoodsInfoListOkController implements Execute {
 
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServerException {
+			
+		AdminDAO adminDAO = new AdminDAO();
+		Result result = new Result();
+		
+		
+		adminDAO.goodsInfoList();
+		
+		request.setAttribute("GoodsInfoList", adminDAO.goodsInfoList());
 
-		ImageDTO imageDTO = new ImageDTO();
-		ImageDAO imageDAO = new ImageDAO();
-		
 		
 
-		System.out.println(imageDAO);
-		
 		return null;
+		
+		
 	}
 	
 	
