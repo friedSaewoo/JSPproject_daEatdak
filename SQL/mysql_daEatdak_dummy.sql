@@ -1,18 +1,21 @@
 use jsp_daEatdak;
 
 -- 회원 테이블에 10명의 더미 데이터 삽입
-INSERT INTO users (user_num, user_email, user_name, user_password, user_phone, user_roll)
+INSERT INTO users (user_email, user_name, user_password, user_phone)
 VALUES
-    (1, 'user1@example.com', 'User1', 'password1', 1234567890, '0'),
-    (2, 'user2@example.com', 'User2', 'password2', 2345678901, '0'),
-    (3, 'user3@example.com', 'User3', 'password3', 3456789012, '0'),
-    (4, 'user4@example.com', 'User4', 'password4', 4567890123, '0'),
-    (5, 'user5@example.com', 'User5', 'password5', 5678901234, '0'),
-    (6, 'user6@example.com', 'User6', 'password6', 6789012345, '0'),
-    (7, 'user7@example.com', 'User7', 'password7', 7890123456, '0'),
-    (8, 'user8@example.com', 'User8', 'password8', 8901234567, '0'),
-    (9, 'user9@example.com', 'User9', 'password9', 9012345678, '0'),
-    (10, 'user10@example.com', 'User10', 'password10', 1234509876, '0');
+    ('user1@example.com', 'User 1', 'password1', '123-456-7890'),
+    ('user2@example.com', 'User 2', 'password2', '987-654-3210'),
+    ('user3@example.com', 'User 3', 'password3', '555-555-5555'),
+    ('user4@example.com', 'User 4', 'password4', NULL), -- user_phone에 NULL 값
+    ('user5@example.com', 'User 5', 'password5', '111-222-3333'),
+    ('user6@example.com', 'User 6', 'password6', '444-555-6666'),
+    ('user7@example.com', 'User 7', 'password7', '777-888-9999'),
+    ('user8@example.com', 'User 8', 'password8', '123-456-7890'),
+    ('user9@example.com', 'User 9', 'password9', '987-654-3210'),
+    ('user10@example.com', 'User 10', 'password10', '555-555-5555');
+
+INSERT INTO users (user_email, user_name, user_password, user_phone,user_roll)
+values ('zriag@naver.com','김성찬','1111','010-7192-1375',1);
 
 insert into category (category_num,category_name)
 values(1,'ChickenGoods'),(2,'PigGoods'),(3,'CowGoods'),(4,'CFGoods');

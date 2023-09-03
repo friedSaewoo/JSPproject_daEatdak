@@ -1,17 +1,18 @@
-drop database jsp_daEatdak;
+
 create database jsp_daEatdak;
+
 use jsp_daEatdak;
 
 
 
 -- phone num varchar로 변경
 CREATE TABLE users (
-	user_number	int	unsigned auto_increment primary key,
+	user_num	int	unsigned auto_increment primary key,
 	user_email	varchar(255)	NOT NULL,
 	user_name	varchar(50)	NOT NULL,
 	user_password	varchar(50)	NOT NULL,
 	user_phone	varchar(20),
-	user_roll	char(1) DEFAULT '0' not null
+	user_roll	int DEFAULT 0
 );
 
 CREATE TABLE address (
