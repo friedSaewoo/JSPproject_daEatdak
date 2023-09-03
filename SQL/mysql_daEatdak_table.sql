@@ -1,32 +1,28 @@
-
-
+drop database jsp_daEatdak;
+create database jsp_daEatdak;
 use jsp_daEatdak;
 
-CREATE TABLE address (
-	address_num	int	unsigned auto_increment primary key,
-	address	varchar(100)	null,
-	road_address	varchar(100)	NULL,
-	detail_address	varchar(100)	NULL
-);
+
 
 -- phone num varchar로 변경
 CREATE TABLE users (
-	user_num	int	unsigned auto_increment primary key,
-	address_num	int unsigned not NULL,
+	user_number	int	unsigned auto_increment primary key,
 	user_email	varchar(255)	NOT NULL,
 	user_name	varchar(50)	NOT NULL,
 	user_password	varchar(50)	NOT NULL,
 	user_phone	varchar(20),
-	user_roll	int	DEFAULT 0 not null,
-	foreign key (address_num) references address (address_num)
+	user_roll	char(1) DEFAULT '0' not null
 );
 
-ALTER TABLE users
-MODIFY COLUMN address_num INT unsigned not null;
+CREATE TABLE address (
+	address_num	int	unsigned auto_increment primary key,
+	user_num int unsigned,
+	address	varchar(100)	null,
+	road_address	varchar(100)	NULL,
+	detail_address	varchar(100)	null,
+	foreign key (user_num) references users (user_num)
+);
 
-ALTER TABLE users
-ADD CONSTRAINT FK_users_address
-FOREIGN KEY (address_num) REFERENCES address(address_num);
 
 CREATE TABLE category (
 	category_num	int	unsigned auto_increment primary key,

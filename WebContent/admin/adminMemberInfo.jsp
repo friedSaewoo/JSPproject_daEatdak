@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@page import="com.daeatdak.user.dto.UserDTO"%>
+<%@page import="com.daeatdak.user.dto.UserDTO"%>
 <%@page import="java.util.List"%>
 <%@page import="com.daeatdak.user.dao.UserDAO"%>
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
