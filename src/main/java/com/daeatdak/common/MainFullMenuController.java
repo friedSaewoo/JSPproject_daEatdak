@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.daeatdak.common.dao.CommonDAO;
-import com.daeatdak.common.vo.CommonVO;
+import com.daeatdak.common.dto.CommonDTO;
 
 public class MainFullMenuController {
 
@@ -17,7 +17,7 @@ public class MainFullMenuController {
 
         // CommonDAO의 selectAll 메서드를 호출하여 상품 목록을 가져옴
         // (CommonVO는 상품 정보를 담는 클래스로 가정)
-        List<CommonVO> goodsList = commonDAO.selectAll();
+        List<CommonDTO> goodsList = commonDAO.selectAll();
    
         
 

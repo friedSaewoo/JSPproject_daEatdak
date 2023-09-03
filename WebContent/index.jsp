@@ -85,15 +85,16 @@
                                
                                     <c:choose>
         <c:when test="${not empty category1}">
-            <ul class="horizontal-list">
+            <ul>
                 <c:forEach items="${category1}" var="goods" varStatus="loop">
                     <c:if test="${loop.index < 10}">          
                         <li>
                             <a href="#">
                                 <div class="zoom-container">
-                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                    <img src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="신상품1"/>
                                 </div>
-                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <h5>다잇닭<h5>
+                                <h6>${goods.getGoodsName()}</h6>
                                 <p>${goods.goodsPrice}원</p>
                             </a>
                         </li>
@@ -115,15 +116,16 @@
                             <div class="panel" id="panel2">
                                 <c:choose>
         <c:when test="${not empty category2}">
-            <ul class="horizontal-list">
+            <ul>
                 <c:forEach items="${category2}" var="goods" varStatus="loop">
                     <c:if test="${loop.index < 10}">          
                         <li>
                             <a href="#">
                                 <div class="zoom-container">
-                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                    <img src="${pageContext.request.contextPath}/resources/goods/img/pig01.png" alt="신상품1"/>
                                 </div>
-                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <h5>다잇닭<h5>
+                                <h6>${goods.getGoodsName()}</h6>
                                 <p>${goods.goodsPrice}원</p>
                             </a>
                         </li>
@@ -146,15 +148,16 @@
                             <div class="panel" id="panel3">
                                 <c:choose>
         <c:when test="${not empty category3}">
-            <ul class="horizontal-list">
+            <ul>
                 <c:forEach items="${category3}" var="goods" varStatus="loop">
                     <c:if test="${loop.index < 10}">          
                         <li>
                             <a href="#">
                                 <div class="zoom-container">
-                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                    <img src="${pageContext.request.contextPath}/resources/goods/img/cow01.png" alt="신상품1"/>
                                 </div>
-                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <h5>다잇닭<h5>
+                                <h6>${goods.getGoodsName()}</h6>
                                 <p>${goods.goodsPrice}원</p>
                             </a>
                         </li>
@@ -172,15 +175,16 @@
                             <div class="panel" id="panel4">
                                 <c:choose>
         <c:when test="${not empty category4}">
-            <ul class="horizontal-list">
+            <ul>
                 <c:forEach items="${category4}" var="goods" varStatus="loop">
                     <c:if test="${loop.index < 10}">          
                         <li>
                             <a href="#">
                                 <div class="zoom-container">
-                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                    <img src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png" alt="신상품1"/>
                                 </div>
-                                <p><span>다잇닭</span>${goods.getGoodsName()}</p>
+                                <h5>다잇닭<h5>
+                                <h6>${goods.getGoodsName()}</h6>
                                 <p>${goods.goodsPrice}원</p>
                             </a>
                         </li>
@@ -212,13 +216,13 @@
                 <div class="recently-goods-contents">
     <c:choose>
         <c:when test="${not empty goodsList}">
-            <ul class="horizontal-list">
+            <ul>
                 <c:forEach items="${goodsList}" var="goods" varStatus="loop">
                     <c:if test="${loop.index < 10}">          
                         <li>
                             <a href="#">
                                 <div class="zoom-container">
-                                    <img src="./resources/goods/img/beverage01.png" alt="신상품1"/>
+                                    <img src="${pageContext.request.contextPath}/resources/goods/img/beverage01.png" alt="신상품1"/>
                                 </div>
                                 <p><span>다잇닭</span>${goods.getGoodsName()}</p>
                                 <p>${goods.goodsPrice}원</p>

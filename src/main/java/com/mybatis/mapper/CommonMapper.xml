@@ -3,29 +3,29 @@
 <mapper namespace="common">
 
 
-   <select id = "selectAll" resultType="CommonVO">
+   <select id = "selectAll" resultType="CommonDTO">
    		SELECT goods_name, goods_price 
         FROM goods
         ORDER BY sale_count DESC
    </select>
    
-   <select id = "selectAll1" resultType="CommonVO">
+   <select id = "selectAll1" resultType="CommonDTO">
    		SELECT * FROM goods
         where category_num = 1
         
    </select>
    
-   <select id = "selectAll2" resultType="CommonVO">
+   <select id = "selectAll2" resultType="CommonDTO">
    		SELECT * FROM goods
         where category_num = 2
         
    </select>
-   <select id = "selectAll3" resultType="CommonVO">
+   <select id = "selectAll3" resultType="CommonDTO">
    		SELECT * FROM goods
         where category_num = 3
         
    </select>
-   <select id = "selectAll4" resultType="CommonVO">
+   <select id = "selectAll4" resultType="CommonDTO">
    		SELECT * FROM goods
         where category_num = 4
         

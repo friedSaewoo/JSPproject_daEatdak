@@ -8,6 +8,16 @@
     
 }
 
+
+
+.horizontal-list a{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    white-space: normal; /* 텍스트 줄 바꿈을 기본값으로 돌려놓습니다. */
+}
+
 .main-content-container {
     
     width: 1024px;

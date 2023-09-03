@@ -7,7 +7,7 @@
 	
 	<!-- DTO 추가 -->
    <typeAliases>
-      <typeAlias type="com.daeatdak.common.vo.CommonVO" alias="CommonVO"/>
+      <typeAlias type="com.daeatdak.common.dto.CommonDTO" alias="CommonDTO"/>
    </typeAliases>
 
 
