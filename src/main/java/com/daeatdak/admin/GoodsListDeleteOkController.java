@@ -21,12 +21,7 @@ public class GoodsListDeleteOkController implements Execute {
 		AdminDAO adminDAO = new AdminDAO();
 		Result result = new Result();
 		
-		int goodsNumber =(Integer.valueOf(request.getParameter("goodsNum")));
-		System.out.println(goodsNumber);
-		adminDAO.goodsDelete(goodsNumber);
-		
-		result.setRedirect(true);
-		result.setPath("/admin/goodsListDelete.ad?goodsNum="+goodsNumber);
+		System.out.println("dddd");
 		
 		
 		return result;

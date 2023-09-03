@@ -22,12 +22,11 @@ public class GoodsRegistOkController implements Execute {
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServerException {
  
+		String dynamicUR="";
+	
 		
-		String cate = request.getParameter("goodsCategory");
-		System.out.println(cate);
 		
-		
-		String UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/";
+		String UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/" + dynamicUR;
 		final int FILE_SIZE = 1024 * 1024 * 5; // 5MB
 //		final String UPLOAD_PATH = "/WebContent/upload/";
 
@@ -78,20 +77,26 @@ public class GoodsRegistOkController implements Execute {
 		int categoryValue = (Integer.valueOf(multipartRequest.getParameter("goodsCategory")));
 		
 		
-//		if(categoryValue==1) {
-//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/chicken/";
-//	
-//		}else if(categoryValue==2) {
-//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/meat/";
-//
-//		}else if (categoryValue==3) {
-//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/pork/";
-//
-//		}else if(categoryValue==4){
-//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/ccc/";
-//
-//		}
-//		multipartRequest = new MultipartRequest(request, UPLOAD_PATH, FILE_SIZE, "utf-8", new DefaultFileRenamePolicy());
+		if(categoryValue==1) {
+			dynamicUR ="chicken/";
+			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/chicken/";
+	
+		}else if(categoryValue==2) {
+			dynamicUR ="meat/";
+
+			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/meat/";
+
+		}else if (categoryValue==3) {
+			dynamicUR ="pork/";
+
+			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/pork/";
+
+		}else if(categoryValue==4){
+			dynamicUR ="ccc/";
+
+			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/ccc/";
+
+		}
 
 		System.out.println(UPLOAD_PATH);
 		System.out.println(categoryValue+"카테고리번호");
