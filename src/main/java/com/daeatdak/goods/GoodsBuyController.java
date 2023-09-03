@@ -11,27 +11,24 @@ import com.daeatdak.Execute;
 import com.daeatdak.Result;
 import com.daeatdak.goods.dao.GoodsDAO;
 
-public class GoodsListController implements Execute{
+public class GoodsBuyController implements Execute{
 
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServerException {
-	      GoodsDAO goodsDAO = new GoodsDAO();
-	      int categoryNum = Integer.parseInt(request.getParameter("categoryNum")) ;
-	      
-	      request.setAttribute("goodsList", goodsDAO.selectCategory(categoryNum));	      
-	      request.setAttribute("goodsImages", goodsDAO.selectImage());
-	      
-	      System.out.println("cateNum : " + categoryNum);
-	      try {
-			request.getRequestDispatcher("/goods/GoodsList.jsp").forward(request, response);
+		GoodsDAO goodsDAO = new GoodsDAO();
+		int goodsNum = Integer.parseInt(request.getParameter("goodsNum"));
+		
+		request.setAttribute("goodsList", goodsDAO.selectGoodsNum(goodsNum));
+		request.setAttribute("goodsImages", goodsDAO.selectImageByGoodsNum(goodsNum));
+		try {
+			request.getRequestDispatcher("/goods/GoodsBuyPage.jsp").forward(request, response);
 		} catch (ServletException e) {
-
 			e.printStackTrace();
 		} catch (IOException e) {
-
 			e.printStackTrace();
 		}
+		
 		return null;
 	}
 

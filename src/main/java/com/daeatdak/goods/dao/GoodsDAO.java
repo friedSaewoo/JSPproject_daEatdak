@@ -19,7 +19,17 @@ public class GoodsDAO {
 	      return sqlSession.selectList("goods.selectCategory", categoryNum);
 	   }
 	   
+   
 	   public List<GoodsImageDTO> selectImage(){
 		   return sqlSession.selectList("goods.selectImage");
 	   }
+	   
+	   public GoodsImageDTO selectImageByGoodsNum(int goodsNum){
+		   return sqlSession.selectOne("goods.selectImageByGoodsNum",goodsNum);
+	   }
+	   
+	   public GoodsDTO selectGoodsNum(int goodsNum){
+		   return sqlSession.selectOne("goods.selectGoodsNum", goodsNum);
+	   }
+	   
 }

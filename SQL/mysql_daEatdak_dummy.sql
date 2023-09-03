@@ -72,16 +72,18 @@ INSERT INTO goods (category_num, goods_name, goods_price, goods_quantity, sale_c
 SELECT * FROM goods;
 
 insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
-			value(1,'resources/goods/img/Chicken/1/1.png','WebContent/resources/goods/img/Chicken/1/2.png',null,null,null,null);
+			value(1,'resources/goods/img/Chicken/1/1.png','resources/goods/img/Chicken/1/2.png',null,null,null,null);
 
 insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
-			value(11,'resources/goods/img/Pig/1/1.png','WebContent/resources/goods/img/Pig/1/2.png',null,null,null,null);
+			value(11,'resources/goods/img/Pig/1/1.png','resources/goods/img/Pig/1/2.jpg',
+				'resources/goods/img/Pig/1/3.jpg','resources/goods/img/Pig/1/4.jpg','resources/goods/img/Pig/1/5.jpg',null);
 		
 insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
-			value(21,'resources/goods/img/Cow/1/1.png','WebContent/resources/goods/img/Cow/1/2.png',null,null,null,null);	
+			value(21,'resources/goods/img/Cow/1/1.png','resources/goods/img/Cow/1/2.jpg','resources/goods/img/Cow/1/3.jpg','resources/goods/img/Cow/1/4.jpg',null,null);	
 		
 insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, goods_detail_img3, goods_detail_img4, goods_detail_img5)
-			value(31,'resources/goods/img/CF/1/1.png','WebContent/resources/goods/img/CF/1/2.png',null,null,null,null);	
+			value(31,'resources/goods/img/CF/1/1.png','resources/goods/img/CF/1/2.jpg','resources/goods/img/CF/1/3.jpg',
+					'resources/goods/img/CF/1/4.jpg',null,null);	
 		
 select * from image;
 

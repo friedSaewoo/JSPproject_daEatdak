@@ -62,9 +62,8 @@
                             <div class="list">
                             	<form action="" method="get">
                                 <figure class="img">
-                                    <a href="${pageContext.request.contextPath}/goods/GoodsBuyPage.jsp">
+                                    <a href="${pageContext.request.contextPath}/goods/goodsBuy.go?goodsNum=${goods.getGoodsNum()}">
                                         <img class="chicken" src="${pageContext.request.contextPath}/${imagePath}" alt="상품이미지">
-                                        <td><c:out value="${imagePath }"/></td>
                                     </a>
                                 </figure>
                                 </form>

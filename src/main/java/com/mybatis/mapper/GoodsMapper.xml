@@ -7,4 +7,10 @@
   <select id ="selectImage" resultType="GoodsImageDTO" parameterType="_int">
   		select * from image
   </select>
+    <select id ="selectImageByGoodsNum" resultType="GoodsImageDTO" parameterType="_int">
+  		select * from image where goods_num = #{goodsNum}
+  </select>
+  <select id ="selectGoodsNum" resultType="GoodsDTO" parameterType="_int">
+  		select * from goods where goods_num = #{goodsNum}
+  </select>
 </mapper>
