@@ -7,9 +7,14 @@
 	
 	<!-- DTO 추가 -->
    <typeAliases>
+<<<<<<< HEAD
     
       <typeAlias type="com.daeatdak.board.dto.BoardDTO" alias = "BoardDTO"/>
       <typeAlias type="com.daeatdak.board.vo.BoardVO" alias = "BoardVO"/>
+=======
+      <typeAlias type="com.daeatdak.goods.dto.GoodsDTO" alias = "GoodsDTO"/>
+      <typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
+>>>>>>> 8c2436e43b73f526678313f2e5e5456e45ce58e5
    </typeAliases>
 
 
@@ -27,8 +32,12 @@
    
    <!-- Mapper 추가 -->
    <mappers>
+<<<<<<< HEAD
          <mapper resource = "com/mybatis/mapper/MemberMapper.xml"></mapper>
          <mapper resource = "com/mybatis/mapper/BoardMapper.xml"></mapper>
+=======
+         <mapper resource = "com/mybatis/mapper/GoodsMapper.xml"></mapper>
+>>>>>>> 8c2436e43b73f526678313f2e5e5456e45ce58e5
    </mappers>
    
 </configuration>
