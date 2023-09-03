@@ -16,73 +16,76 @@ import com.daeatdak.user.JoinOkController;
 //@WebServlet("/AdminFrontController")
 public class AdminFrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public AdminFrontController() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
 	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#HttpServlet()
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public AdminFrontController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doProcess(request, response);
 
 		// TODO Auto-generated method stub
 	}
 
 	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse
+	 *      response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doProcess(request, response);
 
 		// TODO Auto-generated method stub
 	}
 
-	
 	protected void doProcess(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		String target = request.getRequestURI().substring(request.getContextPath().length());
 		System.out.println(target);
-		Result result = null;	
-		
-		
-		switch(target) {
+		Result result = null;
+
+		switch (target) {
 		case "/admin/goodsRegist.ad":
 			request.getRequestDispatcher("/admin/adminProductRegist.jsp").forward(request, response);
 			break;
-		
+
 		case "/admin/goodsRegistOk.ad":
 			System.out.println("등록완료");
-			result = new GoodsRegistOkController().execute(request, response);
-			request.getRequestDispatcher("/admin/goodsInfoList.ad").forward(request, response);
+			new GoodsRegistOkController().execute(request, response);
+			request.getRequestDispatcher("/admin/goodsInfoListOk.ad").forward(request, response);
 
 			break;
-			
-			
-			
-		case "/admin/goodsInfoList.ad":
-			new GoodsInfoListOkController().execute(request, response);
 
+		case "/admin/goodsInfoListOk.ad":
+			new GoodsInfoListOkController().execute(request, response);
+			System.out.println("상품 리스트 페이지 이동");
 			request.getRequestDispatcher("/admin/adminProductInfo.jsp").forward(request, response);
 			break;
-			
+
+		case "/admin/goodsListDelete.ad":
+			new GoodsListDeleteOkController().execute(request, response);
+			break;
 		case "/admin/goodsModify.ad":
 			System.out.println("수정하기 페이지");
 			request.getRequestDispatcher("/admin/adminProductRegist.jsp").forward(request, response);
 
 			break;
-			
+
 		case "/admin/goodsModifyOk.ad":
 			System.out.println("수정완료");
 			break;
-		
+
 		}
-		
+
 		if (result != null) {
 			if (result.isRedirect()) {
 				response.sendRedirect(result.getPath());
@@ -91,5 +94,5 @@ public class AdminFrontController extends HttpServlet {
 			}
 		}
 	}
-	
+
 }

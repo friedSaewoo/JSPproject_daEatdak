@@ -2,7 +2,7 @@ package com.daeatdak.admin.vo;
 
 public class GoodsInfoListVO {
 	
-	private int goodsNumber;
+	private int goodsNum;
 	private String categoryName;
 	private String goodsName;
 	private int goodsPrice;
@@ -14,13 +14,13 @@ public class GoodsInfoListVO {
 	}
 
 
-	public int getGoodsNumber() {
-		return goodsNumber;
+	public int getGoodsNum() {
+		return goodsNum;
 	}
 
 
-	public void setGoodsNumber(int goodsNumber) {
-		this.goodsNumber = goodsNumber;
+	public void setGoodsNum(int goodsNum) {
+		this.goodsNum = goodsNum;
 	}
 
 
@@ -66,7 +66,7 @@ public class GoodsInfoListVO {
 
 	@Override
 	public String toString() {
-		return "GoodsInfoListVO [goodsNumber=" + goodsNumber + ", categoryName=" + categoryName + ", goodsName="
+		return "GoodsInfoListVO [goodsNumber=" + goodsNum + ", categoryName=" + categoryName + ", goodsName="
 				+ goodsName + ", goodsPrice=" + goodsPrice + ", goodsQuantity=" + goodsQuantity + "]";
 	}
 	

@@ -51,6 +51,7 @@
 							</div>
 
 							<div style="width: 60%; margin-left: 10px;">
+							
 								<div class="productRegist">
 									<div>
 										<span>상품분류</span>&nbsp;&nbsp; 
@@ -64,6 +65,7 @@
 										<hr>
 									</div>
 								</div>
+								
 								<div class="productRegist">
 									<div>
 										<span>상품명&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; 

@@ -30,5 +30,10 @@ public class AdminDAO  {
 		return sqlSession.selectList("admin.GoodsInfoList");
 		
 	}
+	
+	
+	  public void goodsDelete(int goodsNumber) {
+	  sqlSession.delete("admin,goodsListDelete", goodsNumber); }
+	 
 
 }

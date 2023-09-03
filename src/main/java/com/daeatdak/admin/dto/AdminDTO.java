@@ -2,7 +2,7 @@ package com.daeatdak.admin.dto;
 
 public class AdminDTO {
 
-	private int goodsNumber;
+	private int goodsNum;
 	private String goodsName;
 	private int goodsQuantity;
 	private int goodsCategory;
@@ -15,11 +15,11 @@ public class AdminDTO {
 	}
 
 	public int getGoodsNumber() {
-		return goodsNumber;
+		return goodsNum;
 	}
 
-	public void setGoodsNumber(int goodsNumber) {
-		this.goodsNumber = goodsNumber;
+	public void setGoodsNumber(int goodsNum) {
+		this.goodsNum = goodsNum;
 	}
 
 	public String getGoodsName() {
@@ -72,7 +72,7 @@ public class AdminDTO {
 
 	@Override
 	public String toString() {
-		return "AdminDTO [goodsNumber=" + goodsNumber + ", goodsName=" + goodsName + ", goodsQuantity=" + goodsQuantity
+		return "AdminDTO [goodsNumber=" + goodsNum + ", goodsName=" + goodsName + ", goodsQuantity=" + goodsQuantity
 				+ ", goodsCategory=" + goodsCategory + ", goodsPrice=" + goodsPrice + ", saleCount=" + saleCount
 				+ ", imageNum=" + imageNum + "]";
 	}

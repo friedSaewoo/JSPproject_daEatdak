@@ -4,7 +4,7 @@ public class FileDTO {
 	private String filePath;
 	private String fileSystemName;
 	private String fileOriginalName;
-	private int goodsNumber;
+	private int goodsNum;
 
 	public FileDTO() {
 		;
@@ -35,17 +35,17 @@ public class FileDTO {
 	}
 
 	public int getGoodsNumber() {
-		return goodsNumber;
+		return goodsNum;
 	}
 
-	public void setGoodsNumber(int goodsNumber) {
-		this.goodsNumber = goodsNumber;
+	public void setGoodsNumber(int goodsNum) {
+		this.goodsNum = goodsNum;
 	}
 
 	@Override
 	public String toString() {
 		return "FileDTO [filePath=" + filePath + ", fileSystemName=" + fileSystemName + ", fileOriginalName="
-				+ fileOriginalName + ", goodsNumber=" + goodsNumber + "]";
+				+ fileOriginalName + ", goodsNumber=" + goodsNum + "]";
 	}
 
 	

@@ -21,10 +21,15 @@ public class GoodsRegistOkController implements Execute {
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServerException {
-
-		 String UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/";
+ 
+		
+		String cate = request.getParameter("goodsCategory");
+		System.out.println(cate);
+		
+		
+		String UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/";
 		final int FILE_SIZE = 1024 * 1024 * 5; // 5MB
-//		final String UPLOAD_PATH2 = "/Users/thirdk/work_data/new-class/jsp/workspace/jsp_daEatdak/WebContent/upload/";
+//		final String UPLOAD_PATH = "/WebContent/upload/";
 
 		MultipartRequest multipartRequest = new MultipartRequest(request, UPLOAD_PATH, FILE_SIZE, "utf-8", new DefaultFileRenamePolicy());
 
@@ -40,8 +45,6 @@ public class GoodsRegistOkController implements Execute {
 		 */
 		Result result = new Result();
 
-		String number = request.getParameter("goodsCategory");
-		System.out.println(number);
 		
 		
 		/*
@@ -72,24 +75,25 @@ public class GoodsRegistOkController implements Execute {
 //
 //		
 //		
-		int categoryValue = (Integer.valueOf( multipartRequest.getParameter("goodsCategory")));
+		int categoryValue = (Integer.valueOf(multipartRequest.getParameter("goodsCategory")));
 		
 		
-		if(categoryValue==1) {
-			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/chicken/";
-			
+//		if(categoryValue==1) {
+//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/chicken/";
+//	
+//		}else if(categoryValue==2) {
+//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/meat/";
+//
+//		}else if (categoryValue==3) {
+//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/pork/";
+//
+//		}else if(categoryValue==4){
+//			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/ccc/";
+//
+//		}
+//		multipartRequest = new MultipartRequest(request, UPLOAD_PATH, FILE_SIZE, "utf-8", new DefaultFileRenamePolicy());
 
-		}else if(categoryValue==2) {
-			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/meat/";
-
-		}else if (categoryValue==3) {
-			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/pork/";
-
-		}else if(categoryValue==4){
-			UPLOAD_PATH = request.getSession().getServletContext().getRealPath("/") + "upload/ccc/";
-
-		}
-		
+		System.out.println(UPLOAD_PATH);
 		System.out.println(categoryValue+"카테고리번호");
 		
 		
