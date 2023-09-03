@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/goods/css/GoodsBuyPage.css" type="text/css"/>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/goods/js/GoodsBuyPage.js" defer></script>
+<script src="${pageContext.request.contextPath}/resources/goods/js/GoodsBuyPage.js?ver=2" defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <title>상품구매페이지</title>
 </head>
 <body>
@@ -116,9 +117,9 @@
                     </div>
                     <div class="product-info-bottom">
                         <div class="product-info">
-                            <div class="choice">찜</div>
-                            <div class="cart">장바구니</div>
-                            <div class="buy">바로구매</div>
+                           <div  class="choice">찜</div>
+                           <div class="cart" id="addToCart">장바구니</div>
+                           <div class="buy" onclick="toController('${pageContext.request.contextPath}/goods/toCart.go?goodsList=${goodsList.getGoodsNum()}')">바로구매</div>
                         </div>
                     </div>
                     <div class="product-cart-movemodal">
@@ -160,4 +161,38 @@
 		<%@ include file="/footer.jsp"%>
 	</div>
 </body>
+    <script>
+    // 클릭 이벤트 핸들러 등록
+    document.getElementById("addToCart").addEventListener("click", function() {
+        // 장바구니에 상품 추가 로직을 수행
+        addToCart();
+    });
+
+    function addToCart() {
+        var goodsNum = "${goodsList.getGoodsNum()}";
+        var url = "${pageContext.request.contextPath}/goods/toCart.go";
+        
+        // AJAX 요청
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: { goodsNum: goodsNum },
+            success: function(response) {
+                // 성공 시 수행할 동작
+                let carts=document.querySelector('.cart');
+				let modals=document.querySelector('.product-cart-movemodal');
+				carts.addEventListener('click',function(){
+  			 	modals.style.display='flex';
+    			setTimeout(function() {
+      			modals.style.display='none';
+   				 }, 1000);
+			})
+            },
+            error: function(xhr, status, error) {
+                // 오류 시 수행할 동작
+                console.error("오류 발생: " + error);
+            }
+        });
+    }
+</script>
 </html>

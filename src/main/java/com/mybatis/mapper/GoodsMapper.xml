@@ -13,4 +13,14 @@
   <select id ="selectGoodsNum" resultType="GoodsDTO" parameterType="_int">
   		select * from goods where goods_num = #{goodsNum}
   </select>
+  <select id ="selectCart" resultType="CartDTO" parameterType="int">
+  		select * from cart where user_num =#{userNum}
+  </select>
+  <insert id ="createCart" parameterType="CartDTO">
+  	insert into cart (user_num)
+  				value(#{userNum})
+  </insert>
+  <select id="CartItemCheck">
+  
+  </select>
 </mapper>

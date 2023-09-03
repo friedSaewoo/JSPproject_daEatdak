@@ -43,12 +43,10 @@ public class GoodsFrontController extends HttpServlet {
 		      case "/goods/goodsBuy.go":
 		    	  new GoodsBuyController().execute(request, response);
 		         break;
-		         
-		      case "/member/login.me":
-		         break;
-		         
-		      case "/member/loginOk.me":
-		         break;
+		     
+		      case "/goods/toCart.go":
+		    	  System.out.println("장바구니로");
+		    	  new AddToCartController().execute(request,response);
 		      }
 		      
 		      

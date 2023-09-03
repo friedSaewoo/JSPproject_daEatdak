@@ -87,10 +87,9 @@ insert into image (goods_num, goods_img, goods_detail_img1, goods_detail_img2, g
 		
 select * from image;
 
-
 select * from goods where category_num = 1;
 
-
+select * from cart;
 
 
 

@@ -26,9 +26,6 @@
                 
                  <p>daEatdak</p> </a>
             </div>
-
-
-
           <!-- 로그인/회원가입 -->
           <div class="user-container">
           <!-- 세션이 비어있을때 -->
@@ -60,8 +57,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/goods/GoodsContainCart.jsp">
-
+                        <a href="${pageContext.request.contextPath}/user/login.me">
                             <span class="material-symbols-outlined">
                                 shopping_cart
                             </span>

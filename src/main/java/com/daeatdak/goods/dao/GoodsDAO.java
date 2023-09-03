@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
 
+import com.daeatdak.goods.dto.CartDTO;
 import com.daeatdak.goods.dto.GoodsDTO;
 import com.daeatdak.goods.dto.GoodsImageDTO;
 import com.mybatis.config.MyBatisConfig;
@@ -31,5 +32,12 @@ public class GoodsDAO {
 	   public GoodsDTO selectGoodsNum(int goodsNum){
 		   return sqlSession.selectOne("goods.selectGoodsNum", goodsNum);
 	   }
+	   public CartDTO selectCart(int userNum) {
+		   return sqlSession.selectOne("goods.selectCart",userNum);
+	   }
 	   
+	   public void createCart(int userNum) {
+		   sqlSession.insert("goods.createCart",userNum);
+	   }
+
 }
