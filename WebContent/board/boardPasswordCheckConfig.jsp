@@ -48,6 +48,22 @@
 	                        <div class="inner-btnBox">
 	                            <button class="btn cancle" onclick="history.go(-1)">취소</button>
 	                            <button class="btn admit" type="submit" onclick="checkPassword()">확인</button>
+							<% String warningMessage = (String)request.getAttribute("warningMessage"); %>
+							
+							<%-- 경고 메시지가 있을 경우 JavaScript로 경고창을 표시합니다. --%>
+							<% if (warningMessage != null && !warningMessage.isEmpty()) { %>
+							    <script type="text/javascript">
+							        // 경고 메시지를 표시합니다.
+							        var warningMessage = '<%= warningMessage %>';
+							        alert(warningMessage);
+							
+							        // 확인 버튼을 누를 때 페이지를 이동합니다.
+							        window.location.href = "/board/boardViewOk.bo";
+							    </script>
+							<% } %>
+
+
+
 	                        </div> 
 	                        
 	                    </form>     

@@ -40,9 +40,9 @@ public class BoardPasswoardOkCheck implements Execute{
 			request.setAttribute("board", boardVO);
 			request.getRequestDispatcher("/board/boardViewOk.bo").forward(request, response);
 		}else if(!boardVO.getBoardPassword().equals(boardPassword)){
-			String jsCode = "alert('비밀번호가 일치하지 않습니다.');";
-			response.setContentType("text/javascript");
-			response.getWriter().write(jsCode);
+			String warningMessage = "비밀번호가 일치하지 않습니다.";
+			request.setAttribute("warningMessage", warningMessage);
+		
 		}
 		return null;
 	}
