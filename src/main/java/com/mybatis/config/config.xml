@@ -7,6 +7,41 @@
 	</settings>
 
 	<!-- DTO 추가 -->
+<<<<<<< HEAD
+   <typeAliases>
+
+    
+      <typeAlias type="com.daeatdak.board.dto.BoardDTO" alias = "BoardDTO"/>
+      <typeAlias type="com.daeatdak.board.vo.BoardVO" alias = "BoardVO"/>
+
+      <typeAlias type="com.daeatdak.goods.dto.GoodsDTO" alias = "GoodsDTO"/>
+      <typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
+
+   </typeAliases>
+
+
+   <environments default="mysql">
+      <environment id="mysql">
+         <transactionManager type="JDBC"/>
+         <dataSource type="POOLED">
+            <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="url" value="jdbc:mysql://localhost:3306/jsp_daEatdak"/>
+            <property name="username" value="root"/>
+            <property name="password" value="1111"/>
+         </dataSource>
+      </environment>
+   </environments>
+   
+   <!-- Mapper 추가 -->
+   <mappers>
+         <mapper resource = "com/mybatis/mapper/MemberMapper.xml"></mapper>
+         <mapper resource = "com/mybatis/mapper/BoardMapper.xml"></mapper>
+
+         <mapper resource = "com/mybatis/mapper/GoodsMapper.xml"></mapper>
+
+   </mappers>
+   
+=======
 	<typeAliases>
 		<typeAlias type="com.daeatdak.user.dto.UserDTO"
 			alias="UserDTO" />
@@ -46,4 +81,5 @@
 	</mappers>
 
 
+>>>>>>> f92216cfc1cde012906e631dac93890fa8ffbf93
 </configuration>
