@@ -103,6 +103,7 @@
                                                     <button class="increase" type="button">+</button>
                                                     <span class="count">1</span>
                                                     <button class="decrease" type="button">-</button>
+                                                    <input class="cartItemPrice" type="hidden" value="${cart.getGoodsPrice()}">
                                                 </div>
                                         </div>
 										<div class="price">
