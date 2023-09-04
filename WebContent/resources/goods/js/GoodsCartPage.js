@@ -65,11 +65,30 @@ productorders.addEventListener('click',function(){
 
 
 
-// 수량 클릭시 변화하는 함수 
+$('.increase').on('click', function(){
+	let price2 = $(this).closest('.order-choice').find('.cartItemPrice').val();
+	let count = parseInt($(this).closest('.order-choice').find('.count').text().trim());
+	$(this).closest('.order-choice').find('.count').text(count+1);
+	
+	let totalPrice = $(this).closest('.cart-goods').find('.total-price');
+	totalPrice.text((count+1)*price2 + '원');
+});
 
-// HTML에서 각 상품을 감싸고 있는 부모 요소의 클래스를 .cart-item으로 가정합니다.
-// HTML에서 각 상품을 감싸고 있는 부모 요소의 클래스를 .cart-item으로 가정합니다.
-let cartItems = document.querySelectorAll('.cart-goods');
+$('.decrease').on('click', function(){
+	let price2 = $(this).closest('.order-choice').find('.cartItemPrice').val();
+	let count = parseInt($(this).closest('.order-choice').find('.count').text().trim());
+
+	if(parseInt(count) < 2) { return; }
+	$(this).closest('.order-choice').find('.count').text(parseInt(count)-1);
+	
+	let totalPrice = $(this).closest('.cart-goods').find('.total-price');
+	totalPrice.text((count-1)*price2 + '원')
+});
+
+
+
+
+/*let cartItems = document.querySelectorAll('.cart-goods');
 
 cartItems.forEach((cartItem, index) => {
     let increaseBtn = cartItem.querySelector('.increase');
@@ -77,19 +96,23 @@ cartItems.forEach((cartItem, index) => {
     let countEl = cartItem.querySelector('.count');
     let totalPriceEl = cartItem.querySelector('.total-price');
 
-    // 각 상품의 가격 정보를 데이터 속성(data-price)을 통해 가져옵니다.
+
     let price = parseFloat(cartItem.getAttribute('data-price'));
     
-    let count = 1; // 초기 수량 설정
+    
+    
+    let count = 1;
 
-    // increase 버튼 클릭 시 수량 증가
+
     increaseBtn.addEventListener('click', () => {
+	
         count++;
         countEl.textContent = count;
         updateTotalPrice(price, count, totalPriceEl);
+       	
     });
 
-    // decrease 버튼 클릭 시 수량 감소 (최소 수량 1)
+
     decreaseBtn.addEventListener('click', () => {
         if (count > 1) {
             count--;
@@ -98,15 +121,15 @@ cartItems.forEach((cartItem, index) => {
         }
     });
 
-    // 초기화 시 총 가격 계산
-    updateTotalPrice(price, count, totalPriceEl);
-});
 
-// 총 가격 업데이트 함수
+    updateTotalPrice(price, count, totalPriceEl);
+});*/
+
+
 function updateTotalPrice(price, count, totalPriceEl) {
     if (!isNaN(price)) {
-        // 총 가격을 계산하고 화면에 업데이트합니다.
+
         let totalPrice = price * count;
-        totalPriceEl.textContent = totalPrice.toFixed(2) + '원'; // 총 가격을 소수점 2자리까지 표시
+        totalPriceEl.textContent = totalPrice.toFixed(2) + '원';
     }
 }
