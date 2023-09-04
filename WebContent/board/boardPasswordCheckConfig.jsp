@@ -47,8 +47,12 @@
                         	<input type="hidden" name="boardNum" value="${board.getBoardNum()}" />
 	                        <input class="content-password" type="password" id="inputPassword" maxlength="4" name="boardPassword"/>
 	                        <div class="inner-btnBox">
+
 	                            <button class="btn cancle" onclick="pagemove()" type="button">취소</button>
 	                            <button class="btn admit" type="submit">확인</button>
+				
+						
+		
 	                        </div> 
 	                    </form>     
                     </div>
