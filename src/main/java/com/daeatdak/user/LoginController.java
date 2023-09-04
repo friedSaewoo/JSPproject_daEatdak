@@ -33,15 +33,15 @@ public class LoginController implements Execute{
 		userDTO.setUserPassword(request.getParameter("userPassword"));
 		
 		result = userDAO.login(userDTO);
-		myCart = goodsDAO.selectCart(result.getUserNum());
 		
-		if(myCart == null) {
-			goodsDAO.createCart(result.getUserNum());
-		}
-		
-		HttpSession session = request.getSession();
-		
+			
 		if(result != null) {
+			myCart = goodsDAO.selectCart(result.getUserNum());
+
+			if(myCart == null) {
+				goodsDAO.createCart(result.getUserNum());
+			}
+			HttpSession session = request.getSession();
 			session.setAttribute("userEmail",result.getUserEmail());
 			session.setAttribute("userNum",result.getUserNum());
 			session.setAttribute("userRoll",result.getUserRoll());
