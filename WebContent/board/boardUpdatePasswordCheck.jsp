@@ -19,6 +19,8 @@
 
 	
  </head>
+ <%--글 수정시 비밀번호를 확인하는 jsp 
+ 비밀번호 틀리시 현제 페이지로 이동 --%>
   <body>
     <div class="side-banner-container">
       <!-- 사이드 배너 영역 -->
@@ -42,7 +44,7 @@
                 <div class="password-check-box">
                     <div class="password-check-box-inner">
                         <b>비밀번호를 입력하세요.</b>
-                        <form action= "/board/boardPasswordCheckConfigOk.bo" method="post">
+                        <form action= "/board/boardUpdatePasswordCheckOk.bo?board=${board.getBoardNum()}" method="post">
                         	
                         	<input type="hidden" name="boardNum" value="${board.getBoardNum()}" />
 	                        <input class="content-password" type="password" id="inputPassword" maxlength="4" name="boardPassword"/>
@@ -74,7 +76,7 @@
 							        if (warningMessage !=null && warningMessage.trim() !== '') {
 							            // 경고 메시지가 있을 경우 JavaScript로 경고창을 표시합니다.
 							            alert(warningMessage);
-							        	window.location.href="http://localhost:8888/board/boardListOk.bo";
+							      
 							        }
 							        // 이후에 필요한 작업을 수행하세요.
 							    }
