@@ -26,6 +26,7 @@ public class BoardUpdateController implements Execute{
 		BoardVO boardVO=new BoardVO();
 ////	Integer userNum = (Integer)request.getSession().getAttribute("userNum");
 //		System.out.println(boardDTO);
+		boardVO.setBoardNum(boardNum);
 		System.out.println("글수정 페이지 이동 완료!");
 		boardVO.setBoardName(request.getParameter("boardName"));
 		System.out.println("-------------Name확인");

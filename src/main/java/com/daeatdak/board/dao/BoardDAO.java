@@ -57,6 +57,11 @@ public class BoardDAO {
 	public BoardVO updateContent(int boardNum) {
 		return sqlSession.selectOne("board.updateContent", boardNum);
 	}
+	// 게시글 삭제하는 메소드 
+	public void delate(int boardNum) {
+		sqlSession.delete("board.delete",boardNum);
+	}
+
 }
 
 

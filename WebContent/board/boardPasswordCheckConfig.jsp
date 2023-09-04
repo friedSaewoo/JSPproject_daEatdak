@@ -48,7 +48,7 @@
 	                        <input class="content-password" type="password" id="inputPassword" maxlength="4" name="boardPassword"/>
 	                        <div class="inner-btnBox">
 	                            <button class="btn cancle" onclick="history.go(-1)">취소</button>
-	                            <button class="btn admit" type="submit" onclick="checkPassword()">확인</button>
+	                            <button class="btn admit" type="submit">확인</button>
 	                        </div> 
 	                    </form>     
                     </div>

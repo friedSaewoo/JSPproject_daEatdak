@@ -67,7 +67,7 @@
               <div class="bt-container">
                 <a href="${pageContext.request.contextPath}/board/boardListOk.bo" class="board-home">글 목록</a>
                 <a href="${pageContext.request.contextPath}/board/boardUpdatePasswordCheck.bo?boardNum=${board.getBoardNum()}" class="board-fix">수정</a>
-                <a href="${pageContext.request.contextPath}/board/boardPasswordCheckDel.jsp" class="board-delete">삭제</a>
+                <a href="${pageContext.request.contextPath}/board/boardDlePasswordCheck.bo?boardNum=${board.getBoardNum()}" class="board-delete">삭제</a>
               </div>
               <div class="comment-container">
                 <div class="comment-title">댓글</div>

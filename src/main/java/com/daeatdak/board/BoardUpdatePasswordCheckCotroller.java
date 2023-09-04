@@ -13,7 +13,7 @@ import com.daeatdak.board.dao.BoardDAO;
 import com.daeatdak.board.vo.BoardVO;
 
 // 수정하기 위해 글등록누르면 비밀번호 체크를 위해 이동하는 클래스 
-public class BoardUpdatePasswordCheck implements Execute{
+public class BoardUpdatePasswordCheckCotroller implements Execute{
 
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)

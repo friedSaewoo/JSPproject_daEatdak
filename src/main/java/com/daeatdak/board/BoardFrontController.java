@@ -88,18 +88,28 @@ public class BoardFrontController extends HttpServlet {
 		// 글수정 버튼클리시 이동하는 곳 => 값을 가져가기위해 설정
 		case "/board/boardUpdatePasswordCheck.bo" :
 			System.out.println(" 수정페이지 비밀번호 확인으로 이동완료!");
-			new BoardUpdatePasswordCheck().execute(request, response);
+			new BoardUpdatePasswordCheckCotroller().execute(request, response);
 			break;
 		// 수정페이지 비밀번호 체크후 수정페이지로 이동 
 		case "/board/boardUpdatePasswordCheckOk.bo" :
 			System.out.println("수정페이지 비밀번호 확인으로 비밀번호 체크 시작");
-			new BoardUpdatePasswordCheckOk().execute(request, response);
+			new BoardUpdatePasswordCheckOkController().execute(request, response);
 			break;
 		case "/board/boardUpdate.bo":
 			System.out.println("도착했어!");
 		
 			new BoardUpdateController().execute(request, response);
 			break;
+			
+		case "/board/boardDlePasswordCheck.bo" :
+			System.out.println(" 삭제하기 비밀번호 확인으로 이동완료!");
+			new BoardDlePasswordCheckCotroller().execute(request, response);
+			break;	
+		
+		case "/board/boardDlePasswordCheckOk.bo" :
+			System.out.println(" 삭제하기 비밀번호 완료!");
+			new BoardDlePasswordCheckOkCotroller().execute(request, response);
+			break;		
 		}
 	}
 	

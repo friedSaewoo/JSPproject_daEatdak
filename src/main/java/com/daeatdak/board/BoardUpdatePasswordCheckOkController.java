@@ -13,7 +13,7 @@ import com.daeatdak.board.dao.BoardDAO;
 import com.daeatdak.board.vo.BoardVO;
 
 // 수정하기 비밀번호 체크후 글쓰기로 이동하는 클래스
-public class BoardUpdatePasswordCheckOk implements Execute{
+public class BoardUpdatePasswordCheckOkController implements Execute{
 
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
@@ -30,19 +30,19 @@ public class BoardUpdatePasswordCheckOk implements Execute{
 		System.out.println(boardPassword);
 		System.out.println("if문까지 갓다");
 		if(boardVO.getBoardPassword().equals(boardPassword)) {
-//			System.out.println(boardVO.getBoardPassword());
-//			System.out.println(boardPassword);
+			System.out.println(boardVO.getBoardPassword());
+			System.out.println(boardPassword);
 			
 			request.setAttribute("board", boardVO);
 			request.getRequestDispatcher("/board/boardUpdatePage.jsp").forward(request, response);
 			System.out.println(boardVO);
 		}
-//		else if(!boardVO.getBoardPassword().equals(boardPassword)){
-//			String warningMessage = "비밀번호가 일치하지 않습니다.";
-//			request.setAttribute("warningMessage", warningMessage);
-//			request.setAttribute("board", boardVO);
-//			System.out.println(warningMessage);
-//			
+		else if(!boardVO.getBoardPassword().equals(boardPassword)){
+			String warningMessage = "비밀번호가 일치하지 않습니다.";
+			request.setAttribute("warningMessage", warningMessage);
+			request.setAttribute("board", boardVO);
+			System.out.println(warningMessage);}
+			
 		
 		return null;
 	}
