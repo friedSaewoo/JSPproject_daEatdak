@@ -6,22 +6,17 @@
       <setting name="mapUnderscoreToCamelCase" value="true" />
    </settings>
 
-<<<<<<< HEAD
 	<!-- DTO 추가 -->
-
 	<typeAliases>
-		<typeAlias type="com.daeatdak.user.dto.UserDTO"
-			alias="UserDTO" />
-		<typeAlias type="com.daeatdak.admin.dto.AdminDTO"
-			alias="AdminDTO" />
+		<typeAlias type="com.daeatdak.user.dto.UserDTO" alias="UserDTO" />
+		<typeAlias type="com.daeatdak.admin.dto.AdminDTO" alias="AdminDTO" />
 		<typeAlias type="com.daeatdak.admin.dto.FileDTO" alias="FileDTO"/>
 		<typeAlias type="com.daeatdak.admin.vo.GoodsInfoListVO" alias="GoodsInfoListVO"/>
-		 <typeAlias type="com.daeatdak.goods.dto.GoodsDTO" alias = "GoodsDTO"/>
-      <typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
-         <typeAlias type="com.daeatdak.board.dto.BoardDTO" alias = "BoardDTO"/>
-      <typeAlias type="com.daeatdak.board.vo.BoardVO" alias = "BoardVO"/>
-			
-
+		<typeAlias type="com.daeatdak.goods.dto.GoodsDTO" alias = "GoodsDTO"/>
+     	<typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
+		<typeAlias type="com.daeatdak.board.dto.BoardDTO" alias = "BoardDTO"/>
+     	<typeAlias type="com.daeatdak.board.vo.BoardVO" alias = "BoardVO"/>
+     	<typeAlias type ="com.daeatdak.common.dto.CommonDTO" alias = "CommonDTO"/> 
 	</typeAliases>
 
 
@@ -43,48 +38,9 @@
 		<mapper resource="com/mybatis/mapper/MemberMapper.xml"></mapper>
 		<mapper resource="com/mybatis/mapper/AdminMapper.xml"></mapper>
 		<mapper resource="com/mybatis/mapper/FileMapper.xml" ></mapper>
-		         <mapper resource = "com/mybatis/mapper/GoodsMapper.xml"></mapper>
-
-		    <mapper resource = "com/mybatis/mapper/BoardMapper.xml"></mapper>
-
-	</mappers>
-
-
-
-=======
-   <!-- DTO 추가 -->
-   <typeAliases>
-      <typeAlias type="com.daeatdak.user.dto.UserDTO" alias="UserDTO" />
-      <typeAlias type="com.daeatdak.admin.dto.AdminDTO" alias="AdminDTO" />
-      <typeAlias type="com.daeatdak.admin.dto.FileDTO" alias="FileDTO"/>
-      <typeAlias type="com.daeatdak.admin.vo.GoodsInfoListVO" alias="GoodsInfoListVO"/>
-      <typeAlias type="com.daeatdak.goods.dto.GoodsDTO" alias = "GoodsDTO"/>
-        <typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
-      <typeAlias type="com.daeatdak.board.dto.BoardDTO" alias = "BoardDTO"/>
-        <typeAlias type="com.daeatdak.board.vo.BoardVO" alias = "BoardVO"/>
-   </typeAliases>
-
-
-   <environments default="mysql">
-      <environment id="mysql">
-         <transactionManager type="JDBC" />
-         <dataSource type="POOLED">
-            <property name="driver" value="com.mysql.cj.jdbc.Driver" />
-            <property name="url"
-               value="jdbc:mysql://localhost:3306/jsp_daEatdak" />
-            <property name="username" value="root" />
-            <property name="password" value="1111" />
-         </dataSource>
-      </environment>
-   </environments>
-
-   <!-- Mapper 추가 -->
-   <mappers>
-      <mapper resource="com/mybatis/mapper/MemberMapper.xml"></mapper>
-      <mapper resource="com/mybatis/mapper/AdminMapper.xml"></mapper>
-      <mapper resource="com/mybatis/mapper/FileMapper.xml" ></mapper>
-      <mapper resource = "com/mybatis/mapper/GoodsMapper.xml"></mapper>
+		<mapper resource = "com/mybatis/mapper/GoodsMapper.xml"></mapper>
         <mapper resource = "com/mybatis/mapper/BoardMapper.xml"></mapper>
+        <mapper resource = "com/mybatis/mapper/CommonMapper.xml"></mapper>
    </mappers>
->>>>>>> 4bdddfa745e6f0128a47aed3a75830e592415461
+
 </configuration>
