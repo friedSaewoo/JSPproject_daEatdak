@@ -65,33 +65,22 @@ productorders.addEventListener('click',function(){
 
 
 
-// 수량 클릭시 변화하는 함수 
+$('.increase').on('click', function(){
+	let price2 = $(this).closest('.order-choice').find('.cartItemPrice').val();
+	let count = parseInt($(this).closest('.order-choice').find('.count').text().trim());
+	$(this).closest('.order-choice').find('.count').text(count+1);
+	
+	let totalPrice = $(this).closest('.cart-goods').find('.total-price');
+	totalPrice.text((count+1)*price2 + '원');
+});
 
-let increaseEl=document.querySelectorAll('.increase');
-let decreaseEl=document.querySelectorAll('.decrease');
-let numbers=document.querySelectorAll('.count');
+$('.decrease').on('click', function(){
+	let price2 = $(this).closest('.order-choice').find('.cartItemPrice').val();
+	let count = parseInt($(this).closest('.order-choice').find('.count').text().trim());
 
-let counts=Array.from({length : numbers.length},()=>0);
-
-function update(){
-    numbers.forEach((count, index) => {
-            count.textContent = counts[index];
-        });
-}
-
-increaseEl.forEach((button,index)=>{
-    button.addEventListener('click',function(){
-        counts[index]++;
-        update();
-    })
-})
-
-decreaseEl.forEach((button, index) => {
-        button.addEventListener('click', function () {
-            // 수량이 0보다 큰 경우에만 감소시킵니다.
-            if (counts[index] > 0) {
-                counts[index]--;
-                update(); // 수량을 화면에 업데이트합니다.
-            }
-        });
-    });
+	if(parseInt(count) < 2) { return; }
+	$(this).closest('.order-choice').find('.count').text(parseInt(count)-1);
+	
+	let totalPrice = $(this).closest('.cart-goods').find('.total-price');
+	totalPrice.text((count-1)*price2 + '원')
+});
