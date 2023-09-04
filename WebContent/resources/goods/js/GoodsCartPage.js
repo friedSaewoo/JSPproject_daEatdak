@@ -67,31 +67,46 @@ productorders.addEventListener('click',function(){
 
 // 수량 클릭시 변화하는 함수 
 
-let increaseEl=document.querySelectorAll('.increase');
-let decreaseEl=document.querySelectorAll('.decrease');
-let numbers=document.querySelectorAll('.count');
+// HTML에서 각 상품을 감싸고 있는 부모 요소의 클래스를 .cart-item으로 가정합니다.
+// HTML에서 각 상품을 감싸고 있는 부모 요소의 클래스를 .cart-item으로 가정합니다.
+let cartItems = document.querySelectorAll('.cart-goods');
 
-let counts=Array.from({length : numbers.length},()=>0);
+cartItems.forEach((cartItem, index) => {
+    let increaseBtn = cartItem.querySelector('.increase');
+    let decreaseBtn = cartItem.querySelector('.decrease');
+    let countEl = cartItem.querySelector('.count');
+    let totalPriceEl = cartItem.querySelector('.total-price');
 
-function update(){
-    numbers.forEach((count, index) => {
-            count.textContent = counts[index];
-        });
-}
+    // 각 상품의 가격 정보를 데이터 속성(data-price)을 통해 가져옵니다.
+    let price = parseFloat(cartItem.getAttribute('data-price'));
+    
+    let count = 1; // 초기 수량 설정
 
-increaseEl.forEach((button,index)=>{
-    button.addEventListener('click',function(){
-        counts[index]++;
-        update();
-    })
-})
-
-decreaseEl.forEach((button, index) => {
-        button.addEventListener('click', function () {
-            // 수량이 0보다 큰 경우에만 감소시킵니다.
-            if (counts[index] > 0) {
-                counts[index]--;
-                update(); // 수량을 화면에 업데이트합니다.
-            }
-        });
+    // increase 버튼 클릭 시 수량 증가
+    increaseBtn.addEventListener('click', () => {
+        count++;
+        countEl.textContent = count;
+        updateTotalPrice(price, count, totalPriceEl);
     });
+
+    // decrease 버튼 클릭 시 수량 감소 (최소 수량 1)
+    decreaseBtn.addEventListener('click', () => {
+        if (count > 1) {
+            count--;
+            countEl.textContent = count;
+            updateTotalPrice(price, count, totalPriceEl);
+        }
+    });
+
+    // 초기화 시 총 가격 계산
+    updateTotalPrice(price, count, totalPriceEl);
+});
+
+// 총 가격 업데이트 함수
+function updateTotalPrice(price, count, totalPriceEl) {
+    if (!isNaN(price)) {
+        // 총 가격을 계산하고 화면에 업데이트합니다.
+        let totalPrice = price * count;
+        totalPriceEl.textContent = totalPrice.toFixed(2) + '원'; // 총 가격을 소수점 2자리까지 표시
+    }
+}

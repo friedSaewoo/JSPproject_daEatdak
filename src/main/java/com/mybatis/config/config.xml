@@ -16,7 +16,9 @@
      	<typeAlias type="com.daeatdak.goods.dto.GoodsImageDTO" alias = "GoodsImageDTO"/>
 		<typeAlias type="com.daeatdak.board.dto.BoardDTO" alias = "BoardDTO"/>
      	<typeAlias type="com.daeatdak.board.vo.BoardVO" alias = "BoardVO"/>
-     	<typeAlias type ="com.daeatdak.common.dto.CommonDTO" alias = "CommonDTO"/> 
+     	<typeAlias type ="com.daeatdak.common.dto.CommonDTO" alias = "CommonDTO"/>
+     	<typeAlias type ="com.daeatdak.goods.dto.CartDTO" alias = "CartDTO"/>
+     	<typeAlias type ="com.daeatdak.goods.dto.CartItemDTO" alias = "CartItemDTO"/>
 	</typeAliases>
 
 
