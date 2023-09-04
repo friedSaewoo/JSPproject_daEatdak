@@ -37,7 +37,7 @@
                 <div class="cart_main">
                     <div class="cart_main_top">
                         <div class="cart_name">
-                            <p>장바구니</p>
+                            <h3>장바구니</h3>
                         </div>    
                     </div>
                     <div class="cart_main_bottom">
@@ -112,12 +112,13 @@
                                     </li>
                                     </c:forEach>
                                 </ul> 
-                            </form>
-                        </div>  
-                        <div class="product-order">
-                            <span>주문하기</span>
-                            
+                         	<input type ="text" id="totalPriceInput" name ="totalPrice" readonly/>  
+                        	<div class="product-order">
+                            	<span>주문하기</span>
+                        	</div>
+                      	</form>
                         </div>
+
                     	</c:otherwise>
                     </c:choose>
                     </div>    

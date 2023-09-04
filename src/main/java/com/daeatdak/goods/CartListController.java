@@ -38,11 +38,13 @@ public class CartListController implements Execute{
 		request.setAttribute("itemList",goodsDAO.selectItemByCartNum(cartDTO.getCartNum()));
 		
 		System.out.println(cartItems);
+		System.out.println("----");
 		System.out.println(session.getAttribute("itemList"));
 		
 	      
 	    request.setAttribute("cartList", goodsDAO.selectCartItems(cartDTO.getCartNum()));
 	    request.setAttribute("goodsImages", goodsDAO.selectImage());
+	    System.out.println(session.getAttribute("cartList"));
 		request.getRequestDispatcher("/goods/CartList.jsp").forward(request, response);
 		return null;
 	}
