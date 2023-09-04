@@ -86,7 +86,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/board/boardListOk.bo">
+                        <a href="${pageContext.request.contextPath}/board/boardListOk.bo">
                             <span class="material-symbols-outlined">
                                 support_agent
                             </span>
@@ -123,7 +123,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/board/boardListOk.bo">
+                        <a href="${pageContext.request.contextPath}/board/boardListOk.bo">
                             <span class="material-symbols-outlined">
                                 support_agent
                             </span>
