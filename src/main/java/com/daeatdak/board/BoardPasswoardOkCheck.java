@@ -38,7 +38,7 @@ public class BoardPasswoardOkCheck implements Execute{
 			request.setAttribute("board", boardVO);
 			String warningMessage = "비밀번호가 일치하지 않습니다.";
 			request.setAttribute("warningMessage", warningMessage);
-			System.out.println(warningMessage);
+			request.getRequestDispatcher("/board/boardPasswordCheckConfig.jsp").forward(request, response);
 		
 		}
 		return null;

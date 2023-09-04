@@ -32,19 +32,16 @@ public class BoardUpdatePasswordCheckOkController implements Execute{
 		if(boardVO.getBoardPassword().equals(boardPassword)) {
 			System.out.println(boardVO.getBoardPassword());
 			System.out.println(boardPassword);
-			
 			request.setAttribute("board", boardVO);
 			request.getRequestDispatcher("/board/boardUpdatePage.jsp").forward(request, response);
 			System.out.println(boardVO);
-		}
-		else if(!boardVO.getBoardPassword().equals(boardPassword)){
+		}else if(!boardVO.getBoardPassword().equals(boardPassword)){
 			String warningMessage = "비밀번호가 일치하지 않습니다.";
 			request.setAttribute("warningMessage", warningMessage);
 			request.setAttribute("board", boardVO);
-			System.out.println(warningMessage);}
-			
+			request.getRequestDispatcher("/board/boardUpdatePasswordCheck.jsp").forward(request, response);
+		}
 		
 		return null;
 	}
-
-}
+} 

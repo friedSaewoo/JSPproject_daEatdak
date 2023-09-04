@@ -21,7 +21,7 @@ public class BoardWriteOkController implements Execute{
 		BoardDAO boardDAO=new BoardDAO();
 //		Integer userNum = (Integer)request.getSession().getAttribute("userNum");
 	
-		
+		response.setContentType("text/html;charset=UTF-8");
 		boardDTO.setBoardName(request.getParameter("boardName"));
 		System.out.println("-------------Name확인");
 		boardDTO.setBoardPassword(request.getParameter("boardPassword"));

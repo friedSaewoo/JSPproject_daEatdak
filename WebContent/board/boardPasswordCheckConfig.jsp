@@ -47,16 +47,17 @@
                         	<input type="hidden" name="boardNum" value="${board.getBoardNum()}" />
 	                        <input class="content-password" type="password" id="inputPassword" maxlength="4" name="boardPassword"/>
 	                        <div class="inner-btnBox">
-	                            <button class="btn cancle" onclick="history.go(-1)">취소</button>
+	                            <button class="btn cancle" onclick="pagemove()" type="button">취소</button>
 	                            <button class="btn admit" type="submit">확인</button>
 	                        </div> 
 	                    </form>     
                     </div>
                 </div>
             </div>
-
+			
         </div>
       </div>
+      <input type="hidden" value="${warningMessage}" class="warningMessage">
     </main>
     </div>
     <div class="footer">
@@ -64,20 +65,21 @@
     </div>
   </body>
   <script type="text/javascript">
-							    function checkPassword() {
-							        // 이 함수에서 비밀번호 확인 및 추가 작업을 수행하세요.
-							        // 예를 들어, 비밀번호 일치 여부를 확인하고 필요한 동작을 수행합니다.
-								
-							        // 경고 메시지 가져오기
-							        var warningMessage = '<%= (String)request.getAttribute("warningMessage") %>';
-							
-							        if (warningMessage !=null && warningMessage.trim() !== '') {
-							            // 경고 메시지가 있을 경우 JavaScript로 경고창을 표시합니다.
-							            alert(warningMessage);
-							        	window.location.href="http://localhost:8888/board/boardListOk.bo";
-							        }
-							        // 이후에 필요한 작업을 수행하세요.
-							    }
+  
+  let message = $('.warningMessage').val();
+  
+  if(message){
+	  alert("비밀번호가 일치하지 않습니다.");
+  }
+  
+  function pagemove(){
+	  let cancles =document.querySelector('.cancle');
+	     cancles.addEventListener("click",function(){
+	         window.location.href="http://localhost:8888/board/boardListOk.bo";
+	     })
+	     console.log(cancles);
+	 };
+
 					
 	</script>
 </html>
