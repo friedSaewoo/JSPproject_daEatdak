@@ -10,6 +10,7 @@ import javax.servlet.http.HttpSession;
 
 import com.daeatdak.Execute;
 import com.daeatdak.Result;
+import com.daeatdak.goods.dao.GoodsDAO;
 import com.daeatdak.goods.dto.CartDTO;
 import com.daeatdak.goods.dto.CartItemDTO;
 import com.daeatdak.goods.dto.GoodsDTO;
@@ -19,9 +20,8 @@ public class AddToCartController implements Execute{
 	@Override
 	public Result execute(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException, ServerException {
-		CartItemDTO cartItemDTO = new CartItemDTO();
-		CartDTO cartDTO = new CartDTO();
-		GoodsDTO goodsDTO = new GoodsDTO();
+
+		GoodsDAO goodsDAO = new GoodsDAO();
 		HttpSession session = request.getSession();	
 		
 		int goodsNum = Integer.parseInt(request.getParameter("goodsNum"));
@@ -29,6 +29,8 @@ public class AddToCartController implements Execute{
 		
 		System.out.println(goodsNum);
 		System.out.println(userNum);
+		
+		goodsDAO.insertCartItem(userNum,goodsNum);
 		
 		return null;
 	}

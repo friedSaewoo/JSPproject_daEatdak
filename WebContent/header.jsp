@@ -78,7 +78,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="${pageContext.request.contextPath}/user/looutOk.me">
+                        <a href="${pageContext.request.contextPath}/user/Ok.me">
                             <span class="material-symbols-outlined">
 							person
 							</span>
@@ -94,7 +94,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/product/html/product_cart_choice.html">
+                        <a href="${pageContext.request.contextPath}/goods/CartList.go?userNum=${sessionScope.userNum}">
                             <span class="material-symbols-outlined">
                                 shopping_cart
                             </span>

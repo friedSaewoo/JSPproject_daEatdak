@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/common/css/common.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath}/resources/common/img/logoPic.png" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/goods/css/GoodsBuyPage.css" type="text/css"/>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/goods/css/GoodsBuyPage.css?ver=1" type="text/css"/>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/goods/js/GoodsBuyPage.js?ver=2" defer></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -126,6 +126,10 @@
                         <div>장바구니에 추가되었습니다</div>
                         <div> 장바구니로 이동하세요</div>
                     </div>
+                    <div class="product-cart-loginmodal">
+                        <div>로그아웃 상태입니다.</div>
+                        <div> 계속하시려면 로그인해주세요</div>
+                    </div>
                     <div class="product_deteil_area">
                         <p>상품정보</p>
                     
@@ -191,6 +195,14 @@
             error: function(xhr, status, error) {
                 // 오류 시 수행할 동작
                 console.error("오류 발생: " + error);
+                let carts=document.querySelector('.cart');
+				let modals=document.querySelector('.product-cart-loginmodal');
+				carts.addEventListener('click',function(){
+  			 	modals.style.display='flex';
+    			setTimeout(function() {
+      			modals.style.display='none';
+   				 }, 1000);
+			})
             }
         });
     }
