@@ -22,6 +22,7 @@ public class BoardDlePasswordCheckOkCotroller implements Execute{
 		System.out.println(boardNum);
 		BoardDAO boardDAO=new BoardDAO();
 		BoardVO boardVO=new BoardVO();
+		request.setAttribute(null, boardVO);
 		System.out.println(boardVO);
 		System.out.println(boardVO.getBoardPassword());
 		String boardPassword=request.getParameter("boardPassword");
