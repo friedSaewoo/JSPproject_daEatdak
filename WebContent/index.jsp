@@ -93,7 +93,7 @@
                                 <div class="zoom-container">
                                 <figure class="img">
                                 <a href="${pageContext.request.contextPath}/goods/goodsBuy.go?goodsNum=${goods.getGoodsNum()}">
-                                    <img src="${pageContext.request.contextPath}/resources/goods/img/chicken01.png" alt="신상품1"/>
+                                    <img src="${goods.getGoodsName()}" alt="신상품1"/>
                                     </a>
                                     </figure>
                                 </div>
