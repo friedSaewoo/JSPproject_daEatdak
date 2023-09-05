@@ -61,7 +61,7 @@
 							<div class="input-group">
 								<div class="input-text">
 									<input type="text" id="userEmail" name="userEmail"
-										placeholder="유저명!!" maxlength="100"> <label
+										placeholder="이메일" maxlength="100"> <label
 										class="nameNull" style="display: none;">유저명을 입력하세요.</label> <input
 										type="password" id="userPassword" name="userPassword"
 										placeholder="비밀번호" maxlength="100"> <label
