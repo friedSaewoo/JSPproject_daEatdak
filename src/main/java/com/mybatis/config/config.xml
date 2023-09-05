@@ -6,6 +6,7 @@
       <setting name="mapUnderscoreToCamelCase" value="true" />
    </settings>
 
+
 	<!-- DTO 추가 -->
 	<typeAliases>
 		<typeAlias type="com.daeatdak.user.dto.UserDTO" alias="UserDTO" />
@@ -45,5 +46,4 @@
         <mapper resource = "com/mybatis/mapper/BoardMapper.xml"></mapper>
         <mapper resource = "com/mybatis/mapper/CommonMapper.xml"></mapper>
    </mappers>
-
 </configuration>
